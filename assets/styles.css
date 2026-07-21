@@ -1,0 +1,104 @@
+/* Asset Insights Portal — Antire brand theme for Docsify
+   Palette: Burgundy #7B1A47, Dark Burgundy #3F1C24, Electric Green #B1EE01,
+   Soft Blue #454CE9, Beige #F6F4F1, Dark Beige #EDE7E0, Pale Pink #FFAAC7,
+   Black #121212, White #FFFFFF */
+
+:root {
+  --brand-burgundy: #7B1A47;
+  --brand-burgundy-dark: #3F1C24;
+  --brand-green: #B1EE01;
+  --brand-blue: #454CE9;
+  --brand-beige: #F6F4F1;
+  --brand-beige-dark: #EDE7E0;
+  --brand-pink: #FFAAC7;
+  --brand-black: #121212;
+
+  --theme-color: #7B1A47;
+  --theme-color-dark: #3F1C24;
+}
+
+* { font-family: Arial, Helvetica, "Segoe UI", sans-serif; }
+
+body { background: var(--brand-beige); color: var(--brand-black); }
+
+/* Sidebar */
+.sidebar { background: #ffffff; border-right: 1px solid var(--brand-beige-dark); }
+.sidebar > h1 { margin: 1.4rem 0 0.6rem; font-size: 1.35rem; }
+.sidebar > h1 a { color: var(--brand-burgundy-dark); font-weight: 700; }
+.sidebar ul li a { color: #3a3a3a; font-size: 0.95rem; }
+.sidebar ul li a:hover { color: var(--brand-burgundy); }
+.sidebar ul li.active > a { color: var(--brand-burgundy); border-right: 3px solid var(--brand-green); font-weight: 700; }
+
+/* Navbar */
+.app-nav a { color: var(--brand-burgundy-dark); font-weight: 600; }
+.app-nav a:hover { color: var(--brand-burgundy); }
+
+/* Headings */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3 { color: var(--brand-burgundy-dark); font-weight: 700; letter-spacing: -0.01em; }
+.markdown-section h1 { border-bottom: 3px solid var(--brand-green); padding-bottom: 0.4rem; display: inline-block; }
+.markdown-section h2 { margin-top: 2.4rem; }
+
+/* Links */
+.markdown-section a { color: var(--brand-blue); border-bottom: 1px solid transparent; }
+.markdown-section a:hover { border-bottom-color: var(--brand-blue); }
+
+/* Content width */
+.markdown-section { max-width: 860px; }
+
+/* Blockquote as brand callout */
+.markdown-section blockquote {
+  border-left: 4px solid var(--brand-green);
+  background: #ffffff;
+  color: var(--brand-burgundy-dark);
+  border-radius: 0 6px 6px 0;
+  font-style: normal;
+  padding: 1rem 1.2rem;
+}
+.markdown-section blockquote p { font-weight: 600; }
+
+/* Tables */
+.markdown-section table { display: table; width: 100%; border-collapse: collapse; }
+.markdown-section tr { border-top: 1px solid var(--brand-beige-dark); }
+.markdown-section th { background: var(--brand-burgundy-dark); color: #fff; text-align: left; font-weight: 600; }
+.markdown-section td, .markdown-section th { padding: 0.6rem 0.9rem; }
+.markdown-section tr:nth-child(2n) { background: #ffffff; }
+
+/* Feature / value cards via unordered emphasis */
+.markdown-section strong { color: var(--brand-burgundy-dark); }
+
+/* Buttons (cover + CTA) */
+.cover-main .buttons a,
+.markdown-section .cta a {
+  display: inline-block;
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  padding: 0.6rem 1.3rem;
+  border-radius: 6px;
+  border: 2px solid var(--brand-burgundy);
+  color: var(--brand-burgundy) !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+.markdown-section .cta a.primary,
+.cover-main .buttons a.primary {
+  background: var(--brand-burgundy);
+  color: #ffffff !important;
+  border-color: var(--brand-burgundy);
+}
+.markdown-section .cta a:hover,
+.cover-main .buttons a:hover { background: var(--brand-green); color: var(--brand-black) !important; border-color: var(--brand-green); }
+
+/* Cover page */
+section.cover { background: linear-gradient(135deg, #3F1C24 0%, #7B1A47 100%) !important; }
+section.cover .cover-main > h1 { color: #ffffff; font-size: 2.6rem; }
+section.cover .cover-main > h1 small { color: var(--brand-green); }
+section.cover .cover-main blockquote p { color: var(--brand-beige); font-size: 1.3rem; font-weight: 400; }
+section.cover .cover-main { color: #ffffff; }
+section.cover.has-mask .mask { background: transparent; }
+
+/* Search */
+.search input { border: 1px solid var(--brand-beige-dark); }
+
+/* Pagination */
+.pagination-item-title { color: var(--brand-burgundy); }
