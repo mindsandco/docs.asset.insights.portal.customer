@@ -2,29 +2,29 @@
 
 Running assets well depends on knowing their true state at any moment. In most organizations that knowledge is spread across many systems and people, which makes it slow to gather and hard to trust. Asset Insights Portal is built to close that gap. Here are the challenges it turns into opportunities.
 
-## Data scattered across systems
+## Data locked in operational silos
 
-Asset data usually lives in separate tools: an inventory system here, a maintenance log there, spreadsheets on someone's laptop, and sensor feeds no one has time to read. Bringing it together by hand is slow and error-prone.
+Asset data is fragmented across systems, protocols, and vendors. Formats differ by manufacturer, site, and generation of equipment, and getting to it often means proprietary gateways and one-off connections. The result is that valuable data stays locked where it was produced.
 
-The portal connects to these sources and unifies them into one view, so the full picture is always available in one place.
+The portal connects to these sources at the edge and brings their data together, so the full picture is available in one place.
 
-## No single source of truth
+## Data you cannot line up or trust
 
-When two reports disagree, people stop trusting both. Reconciling numbers by hand wastes time and undermines confidence in every decision that follows.
+When feeds arrive in different formats and units, no one can compare them or build on them with confidence. Reconciling and validating data by hand wastes time and undermines every decision that follows.
 
-The portal establishes one trusted record for each asset, with clear rules for how conflicting data is resolved, so teams stop arguing about whose figures are right and start acting on them.
+The portal harmonizes incoming data into one consistent, versioned model and validates it with rules as it flows through, so teams work from data that is clean, comparable, and trustworthy.
 
-## Reporting that eats time
+## Integration that costs too much and locks you in
 
-Manual reporting pulls skilled people away from higher-value work. Reports are often out of date by the time they are finished, and the effort has to be repeated every cycle.
+Building and maintaining bespoke pipelines for each system is expensive, and platforms that only work in one cloud or with one vendor make it worse. Every new source or system becomes another custom project.
 
-The portal automates the gathering and presentation of asset data, so reports are current, repeatable, and ready when people need them.
+The portal replaces one-off pipelines with reusable, vendor-agnostic components and open APIs, so connecting a new source or consumer is configuration rather than a rebuild, and you are free to run it where you choose.
 
 ## Decisions made without the full context
 
 When the data is incomplete or hard to reach, decisions get made on partial information or delayed until someone can dig out the numbers. Both outcomes carry real cost.
 
-The portal puts complete, current context in front of decision-makers, so choices about maintenance, investment, and risk are grounded in what is actually happening.
+The portal delivers complete, current data into the analytics and operational systems where decisions are made, so choices about maintenance, investment, and risk are grounded in what is actually happening.
 
 ## Growth that outpaces the tools
 

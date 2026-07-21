@@ -1,26 +1,26 @@
 # How we solve it
 
-Asset Insights Portal follows a simple path from raw data to confident action: connect, unify, understand, act, all on a foundation that is governed and secure. Each step builds on the one before it.
+Asset Insights Portal follows a simple path from raw signals to trusted data your teams and systems can use: connect, harmonize, distribute, and act, all on a foundation that is governed and secure. Each step builds on the one before it.
 
-## 1. Connect
+## 1. Connect at the edge
 
-The portal connects to the data you already have. It ingests from operational systems, databases, files, and streaming sources such as sensors and IoT feeds, using ready-made connectors and open APIs. You do not have to move to new tools first. The portal meets your data where it lives.
+A field gateway connects to your assets on site over the industrial and IoT protocols they already speak, such as OPC UA, MQTT, and Bluetooth. It buffers data locally so nothing is lost when a site loses connectivity, signs each package for integrity, and sends it to the central platform over an outbound connection only. You do not move to new equipment first. The gateway meets your assets where they are.
 
-## 2. Unify
+## 2. Harmonize
 
-Once data is in, the portal maps it onto a common asset model, so information from different sources lines up and makes sense together. Data quality checks flag gaps and inconsistencies, and reconciliation rules decide how conflicts are resolved. The result is one trusted record for each asset.
+Once data arrives, the platform normalizes it into one versioned canonical model, so information from different vendors, sites, and generations of equipment lines up and makes sense together. A rule engine applies transformations and quality checks as data flows through, including unit conversions, range validation, derived metrics, and event detection. The result is clean, consistent, trustworthy data.
 
-## 3. Understand
+## 3. Distribute
 
-With the data unified, teams can explore it through clear dashboards, search, and analytics. AI-assisted insight helps people ask questions in plain language and surfaces patterns that would take hours to find by hand. Because every insight traces back to its source, people can trust what they see and explain it to others.
+Harmonized data is made available through open APIs, primarily GraphQL, so the systems that need it can pull exactly what they need. Analytics platforms, ERP, SCADA, and your own applications consume trusted, standardized data instead of raw, vendor-specific feeds.
 
 ## 4. Act
 
-Insight only matters if it leads to action. The portal turns findings into alerts, notifications, and workflows, and integrates back into the operational systems your teams already use. When something needs attention, the right people know, and the next step is clear.
+Data only matters if it leads to action. The platform dispatches templated notifications when something needs attention, such as an alarm from the field, so the right people are informed through the right channel and the next step is clear.
 
 ## 5. Governed and secure throughout
 
-Every step runs on a foundation of access control, audit, and data lineage. People see the data they are entitled to see, actions are recorded, and the origin of every figure is traceable. Trust is built into how the platform works rather than added on afterward.
+Every step runs on a foundation of strong identity and data integrity. Access is controlled by role and permission through single sign-on, every package is signed at the edge and verified centrally, the canonical model is versioned, and every service is observable through traces, metrics, and logs. Trust is built into how the platform works rather than added on afterward.
 
 ## Delivered the Antire way
 

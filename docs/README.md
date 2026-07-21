@@ -4,7 +4,7 @@
 
 **One trusted view of every asset you own and operate.**
 
-Most organizations already hold the data they need to run their assets well. The problem is that the data lives in different systems, formats, and teams, so no one has the full picture in one place. Asset Insights Portal brings that data together, turns it into insight people can act on, and gives every team a single source of truth they can rely on.
+Most organizations already hold the data they need to run their assets well. The problem is that the data lives in different systems, protocols, and vendors, so no one has the full picture in one place. Asset Insights Portal connects to your assets at the edge, harmonizes their data into one consistent model, and makes it available through open APIs, so every team and system works from a single source of truth they can rely on.
 
 Asset Insights Portal is built by Antire, a people-first AI consultancy. Born in AI. Built for people. We partner with our customers to bridge their goals with trusted AI, and this portal is one of the ways we do it.
 
@@ -12,10 +12,10 @@ Asset Insights Portal is built by Antire, a people-first AI consultancy. Born in
 
 ## Why teams choose it
 
-- **See everything in one place.** Every asset, every source, one view your whole organization can trust.
-- **Decide faster.** Clear dashboards and AI-assisted insight replace hours of manual reporting and reconciliation.
-- **Trust the numbers.** Built-in data quality, lineage, and access control mean the figures people act on hold up to scrutiny.
-- **Grow without friction.** A cloud-native design scales with your asset base, from a single site to a global estate.
+- **Connect any asset.** Bring data in from many vendors, protocols, and sites over the standards your equipment already speaks.
+- **Trust the data.** Automatic harmonization, rule-based validation, and signed delivery mean the data people act on is clean, consistent, and genuine.
+- **Put data to work.** Harmonized data is available through open APIs, so your analytics, ERP, and operational systems can use it straight away.
+- **Grow without friction.** A cloud-native design scales with your asset base, from a single site to a global estate, on the cloud or on-premise.
 
 ## Start here
 

@@ -1,54 +1,63 @@
 # Features
 
-Every feature below exists to serve one goal: giving your people a trusted, actionable view of your assets. They are grouped by the job they do.
+Every feature below exists to serve one goal: getting trusted, standardized asset data from the field into the hands of the people and systems that need it. They are grouped by the job they do.
 
-## See your assets clearly
+## Connect your assets
 
-### Unified asset registry
-A single, authoritative record for every asset, bringing together information from all your sources into one consistent model. This is the source of truth the rest of the portal builds on.
+### Field gateway and edge connectors
+Connect assets over the industrial and IoT protocols they already speak, including OPC UA, MQTT, and Bluetooth, as well as file-based sources. Connectors are built on a shared software development kit, so bringing a new source online means writing the protocol-specific part and letting the platform handle the rest.
 
-### Dashboards and visualization
-Configurable dashboards that show the state of your assets at a glance, from a portfolio overview down to a single item. Teams see what matters to them without building reports by hand.
+### Reliable delivery from the edge
+Gateways buffer data locally and only mark it as sent once the central platform confirms receipt, with automatic retry and backoff. If a site loses connectivity, no data is lost. It is delivered when the link returns.
 
-### Search and filtering
-Fast search across your whole asset base, with filters that let people find exactly the assets, attributes, or conditions they care about in seconds.
+### Egress-only by design
+Field gateways open outbound connections only. They run no inbound network ports and expose no remote control channel, which keeps industrial sites protected. This approach aligns with IEC 62443 and NIST SP 800-82 guidance for industrial control system security.
 
-## Turn data into insight
+### Signed data integrity
+Every payload is cryptographically signed at the gateway and verified centrally, and each gateway authenticates with its own short-lived credentials. You can trust that the data arriving at the center is genuine and unaltered.
 
-### AI-assisted insights
-Ask questions in plain language and get answers drawn from your own data. The portal surfaces patterns, outliers, and trends that would take a person hours to find, and every answer links back to its source.
+## Turn raw data into trusted data
 
-### Analytics and reporting
-Repeatable, always-current reports that replace manual reporting cycles. Export to the formats your teams and stakeholders already use.
+### Automatic harmonization
+Telemetry from different vendors, sites, and generations of equipment is normalized into one versioned canonical model. Data that used to arrive in many incompatible formats lines up in a consistent shape that every consumer can rely on.
 
-### Data quality and validation
-Built-in checks that flag missing, stale, or inconsistent data, so you know how much to trust each figure and where to improve.
+### Rule-based transformation and validation
+A rule engine applies transformations and quality checks as data flows through: unit conversions, range validation, derived metrics, and event detection. The result is clean, consistent, trustworthy data rather than raw readings someone has to interpret by hand.
 
-## Act with confidence
+### Event-driven pipeline
+Data moves through the platform as events, so information flows through as it arrives rather than waiting for a batch cycle. The pipeline scales with volume and keeps services decoupled and resilient.
 
-### Alerts and notifications
-Rules that watch your asset data and tell the right people when something needs attention, through the channels they already use.
+## Access and administer
 
-### Workflows and integration
-Turn insight into action by triggering workflows and feeding results back into your operational systems, so the portal fits into how work already gets done.
+### Management portal
+A single administrative surface for the whole installation: clients and applications, users, roles, assets, fields, gateways, dynamic properties, certificates and secrets, scheduled jobs, and extensions. Built as a modern web application that operators and administrators can use directly.
 
-### Open APIs
-A documented, API-first design lets you connect the portal to other tools, build on top of it, and pull data into your own applications.
+### GraphQL and REST APIs
+Harmonized data and administration are exposed through a documented GraphQL API, with REST where it fits. Consuming systems such as analytics platforms, ERP, and SCADA query the data they need, and a published API kit makes integration straightforward.
 
-## Trust and control
+### Role-based access and single sign-on
+Access is controlled through your identity provider using named roles and fine-grained permissions, so people see and do only what their role allows. Invited users are onboarded through a simple secure sign-in link.
 
-### Role-based access control and single sign-on
-People see and do only what their role allows, and they sign in with your existing identity provider. Access is simple for users and controlled for administrators.
+### White-label branding
+Each tenant can apply its own company name, logo, favicon, background, and theme, applied to both the portal and the sign-in experience, so the platform can carry your brand or your customer's.
 
-### Audit trail and data lineage
-Every action is recorded, and every figure can be traced back to its source. This is what makes the data stand up to scrutiny, review, and audit.
+### Extensions marketplace
+Extend the platform with integrations and add-ons through a built-in marketplace, so new capabilities can be added without rebuilding the core.
 
-### Workspaces and multi-tenancy
-Separate spaces for teams, sites, or business units, each with its own data and access, running on shared, efficient infrastructure.
+## Operate with confidence
 
-## Connect your data
+### Notifications
+Templated notifications are dispatched automatically when something needs attention, such as an alarm from the field, so the right people are informed through the right channel.
 
-### Data connectors and ingestion
-Ready-made connectors for common systems, plus support for databases, files, and streaming sources such as sensors and IoT feeds. New sources can be added as your estate grows.
+### Uptime and health monitoring
+The platform tracks the health of its own services continuously, so operators know the system is running and can act quickly if something needs attention.
+
+### Observability built in
+Every service emits traces, metrics, and structured logs through OpenTelemetry to a standard monitoring stack, so operators have clear visibility into how the platform is behaving.
+
+## Deploy anywhere
+
+### Vendor-agnostic, Kubernetes-first
+The platform is container-based and runs on Kubernetes, on Azure, AWS, or on-premise. Delivery is automated through GitOps, so the same platform runs wherever your data needs to live, including environments with data residency requirements.
 
 Next: [architecture and cloud-native](architecture.md).
