@@ -168,6 +168,8 @@ body:has(section.cover.show) .app-nav a:hover { color: var(--brand-green); }
 
 /* Responsive / mobile */
 @media (max-width: 768px) {
+  /* Hide top navigation on small screens (links remain in the sidebar) */
+  .app-nav { display: none; }
   .markdown-section { max-width: 100%; }
   /* Wide tables scroll horizontally instead of overflowing the viewport */
   .markdown-section table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
