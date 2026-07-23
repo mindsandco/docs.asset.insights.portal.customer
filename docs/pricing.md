@@ -62,6 +62,10 @@ Prefer not to run the platform yourself? We can host it for you as a fully manag
 
 Need guaranteed response times, priority handling, or a dedicated point of contact? We offer support agreements tailored to how critical the platform is to your operation. **Talk with us** and we will size a support plan around your needs.
 
+## Custom extensions
+
+Need something specific to how you operate? Our team can build extensions with you, from an ERP connector to a bespoke dashboard widget, so the platform fits your business rather than the other way around. We scope the work together and price it by what you need built. **Talk with us** and tell us what you have in mind.
+
 ## Not sure which tier fits?
 
 Most customers start with a focused pilot, see the value on their own data, then grow into the tier that matches their estate. We will help you map your assets and fields to the right band before you commit.
