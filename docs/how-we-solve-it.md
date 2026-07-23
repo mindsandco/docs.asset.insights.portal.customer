@@ -24,7 +24,7 @@ Every step runs on a foundation of strong identity and data integrity. Access is
 
 ## Delivered the Antire way
 
-Asset Insights Portal is delivered by Antire, and we prove value fast rather than asking you to commit blind. We validate AI-driven operations in 4–8 weeks: we start by understanding your goals, stand up a focused pilot on your own data around a concrete use case such as predictive maintenance or alarm reduction, and scale once the value is clear. Technology is the enabler. The outcome for your people and your operation is what we measure.
+Asset Insights Portal is delivered by Antire, and we prove value fast rather than asking you to commit blind. We start by understanding your goals, stand up a focused pilot on your own data around a concrete use case such as predictive maintenance or alarm reduction, and scale once the value is clear. Technology is the enabler. The outcome for your people and your operation is what we measure.
 
 > We simplify AI and prove business value fast, so you can see the benefit before you scale.
 
