@@ -20,12 +20,6 @@ The platform continuously monitors the health of its own services. A 90-day hist
 
 ![Uptime page showing per-service health with 90-day uptime history bars](assets/screenshots/uptime.png)
 
-## Applications
-
-Installed applications present harmonized data in context. Here the asset view surfaces per-asset status across the metrics that matter for the installation.
-
-![Application asset view listing assets with per-asset status columns](assets/screenshots/application.png)
-
 ## Marketplace
 
 Extend the platform with integrations and add-ons from a built-in marketplace, so new capabilities are added without rebuilding the core.
