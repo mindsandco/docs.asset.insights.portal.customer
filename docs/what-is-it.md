@@ -1,8 +1,8 @@
 # What is Asset Insights Portal
 
-Asset Insights Portal is a cloud-native platform that gives you a single, trusted place to collect, standardize, and access data about the assets your organization owns and operates. It is vendor-agnostic, so it works across the equipment, sensors, controllers, and systems you already run, whoever made them and whatever protocol they speak.
+Asset Insights Portal is a cloud-native platform that gives you a single, trusted place to collect, standardize, and access data about the assets your organization owns and operates. It connects operational data from SCADA, sensors, on-board systems, control systems, and service logs into one governed foundation. It is vendor-agnostic, so it works across the equipment, sensors, controllers, and systems you already run, whoever made them and whatever protocol they speak.
 
-The portal connects to your assets at the edge, brings their data into one consistent model, and makes it available to the people and systems that need it. Instead of chasing figures across disconnected systems and one-off integrations, everyone works from data they can trust.
+The portal connects to your assets at the edge, brings their data into one consistent model, and makes it available to the people and systems that need it. Instead of chasing figures across disconnected systems and one-off integrations, everyone works from data they can trust — the foundation that makes predictive maintenance, faster diagnosis, and fleet-wide optimization possible.
 
 ## The idea in one line
 

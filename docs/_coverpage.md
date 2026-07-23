@@ -4,7 +4,7 @@
 
 > One trusted view of every asset you own and operate.
 
-Bringing your asset data, systems, and teams onto the same page, so the people who run your operation can see clearly, decide faster, and act with confidence.
+Connect operational data from SCADA, sensors, on-board systems, control systems, and service logs into one governed foundation, so the people who run your operation can predict failures, diagnose faster, and optimize fleet-wide with confidence.
 
 [What it is](what-is-it.md)
 [Explore the portal](README.md)
