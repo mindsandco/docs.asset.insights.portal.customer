@@ -22,7 +22,29 @@ Your recurring price is based on the number of **fields registered** in the plat
 | **Enterprise** | Up to 100 | A large estate with many asset groups under monitoring | €6.700 |
 | **Custom** | 100+ | Large enterprises and portfolios | Let's talk |
 
-> Every tier includes the full platform: field gateways and connectors, automatic harmonization, the management portal, GraphQL and REST APIs, role-based access with single sign-on, and white-label branding. Tiers differ only in how many fields you register, not in what the platform can do.
+### Every tier includes the full platform
+
+<div class="checklist">
+
+- Field gateways and connectors
+- Automatic harmonization into one canonical model
+- The management portal
+- GraphQL and REST APIs
+- Role-based access with single sign-on
+- White-label branding
+
+</div>
+
+> Tiers differ only in how many fields you register, not in what the platform can do.
+
+## Estimate your price
+
+<div id="price-calculator" class="price-calc">
+  <label for="pc-fields">How many fields do you plan to register?</label>
+  <input id="pc-fields" type="number" min="1" step="1" value="5" inputmode="numeric" />
+  <div class="pc-result" id="pc-result"></div>
+  <p class="pc-note">Indicative monthly subscription. A one-time base fee applies to get you live. Final quote confirmed with us.</p>
+</div>
 
 ## What counts as a field?
 

@@ -32,7 +32,44 @@
       pagination: {
         crossChapter: true,
         crossChapterText: true
-      }
+      },
+      plugins: [
+        function (hook) {
+          var TIERS = [
+            { max: 5, name: 'Starter', price: 1350 },
+            { max: 20, name: 'Growth', price: 2000 },
+            { max: 50, name: 'Scale', price: 3350 },
+            { max: 100, name: 'Enterprise', price: 6700 }
+          ];
+          var BASE = 13400;
+          function eur(n) { return '€' + n.toLocaleString('de-DE'); }
+          hook.doneEach(function () {
+            var input = document.getElementById('pc-fields');
+            var out = document.getElementById('pc-result');
+            if (!input || !out) return;
+            function render() {
+              var n = parseInt(input.value, 10);
+              if (!n || n < 1) {
+                out.innerHTML = '<p class="pc-hint">Enter how many fields you want to register.</p>';
+                return;
+              }
+              if (n > 100) {
+                out.innerHTML =
+                  '<div class="pc-tier">Custom</div>' +
+                  '<p class="pc-hint">More than 100 fields. <a href="mailto:hello@antire.com?subject=Asset%20Insights%20Portal%20-%20Custom%20pricing">Let\'s talk</a> and we\'ll size the right plan.</p>';
+                return;
+              }
+              var t = TIERS.filter(function (x) { return n <= x.max; })[0];
+              out.innerHTML =
+                '<div class="pc-tier">' + t.name + '</div>' +
+                '<div class="pc-price">' + eur(t.price) + '<span>&nbsp;/ month</span></div>' +
+                '<p class="pc-hint">Up to ' + t.max + ' fields · one-time base fee ' + eur(BASE) + '</p>';
+            }
+            input.addEventListener('input', render);
+            render();
+          });
+        }
+      ]
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
