@@ -78,4 +78,4 @@ Asset Insights Portal ships with five core roles that cover the common jobs, fro
 
 ![Role administration page showing named roles with fine-grained permissions](assets/screenshots/roles.png)
 
-Next: [architecture and cloud-native](architecture.md).
+Next: [features](features.md).

@@ -1,6 +1,6 @@
 # What we solve
 
-Running assets well depends on knowing their true state at any moment. In most organizations that knowledge is spread across many systems and people, which makes it slow to gather and hard to trust. Asset Insights Portal is built to close that gap — connecting operational data from SCADA, sensors, on-board systems, control systems, and service logs into one governed foundation, so teams can move from firefighting to predictive, fleet-wide operations. Here are the challenges it turns into opportunities, and the outcomes they unlock:
+Running assets well depends on knowing their true state at any moment. In most organizations that knowledge is spread across many systems and people, which makes it slow to gather and hard to trust. Asset Insights Portal is built to close that gap, connecting operational data from SCADA, sensors, on-board systems, control systems, and service logs into one governed foundation, so teams can move from firefighting to predictive, fleet-wide operations. Here are the challenges it turns into opportunities, and the outcomes they unlock:
 
 - **−50%** mean time to repair
 - **+30%** first-time-fix rate

@@ -10,9 +10,9 @@ Your asset data, your systems, and your people, working from the same trusted pi
 
 ## It bridges two worlds
 
-Your assets live in operational technology (OT) — the controllers and sensors on the plant floor — while your analytics, ERP, and business systems live in information technology (IT). The two even rank their priorities in opposite order: OT keeps the process running first, while IT protects data first. Connecting them is usually where asset-data projects stall.
+Your assets live in operational technology (OT), the controllers and sensors on the plant floor, while your analytics, ERP, and business systems live in information technology (IT). The two even rank their priorities in opposite order: OT keeps the process running first, while IT protects data first. Connecting them is usually where asset-data projects stall.
 
-Asset Insights Portal is built to be that bridge. It meets your equipment where it is, keeps the plant side safe and running, and delivers clean, governed data to the enterprise side — honoring what each world cares about most.
+Asset Insights Portal is built to be that bridge. It meets your equipment where it is, keeps the plant side safe and running, and delivers clean, governed data to the enterprise side, honoring what each world cares about most.
 
 ![Asset Insights Portal bridges operational technology, which puts availability first, and information technology, which puts confidentiality first, honoring both](assets/ot-it-bridge.svg ':size=100%')
 
@@ -27,7 +27,7 @@ For the security teams: the technical [architecture](architecture.md) page expla
 
 ## What makes it different
 
-Asset Insights Portal leads with the outcome, not the technology. The goal is not to add another system. The goal is to give your people clarity: a place where the data is complete, current, and trustworthy, so the work of running your assets gets easier.
+Asset Insights Portal is about the outcome. It gives your people clarity: a place where the data is complete, current, and trustworthy, so the work of running your assets gets easier.
 
 Trust is built into how the platform works rather than assumed. Data is signed at the edge and verified centrally, harmonized into a versioned model, and governed by fine-grained access control, so the data people build on holds up to scrutiny. It is a dependable foundation for the analytics and AI initiatives that build on top of it.
 

@@ -10,8 +10,8 @@ The platform's job is to connect two worlds that rank their priorities in opposi
 
 Security teams weigh three concerns: **confidentiality**, **integrity**, and **availability**. The order they rank them in is what separates the plant floor from the enterprise.
 
-- **Operational technology (OT) puts availability first — AIC.** On the plant floor the real hazard is a process that stops. Turbines, inverters, and batteries have to keep running and keep responding, so availability and integrity outrank keeping data secret.
-- **Information technology (IT) puts confidentiality first — CIA.** In the enterprise the real hazard is data in the wrong hands, so confidentiality and integrity come before uptime.
+- **Operational technology (OT) puts availability first (AIC).** On the plant floor the real hazard is a process that stops. Turbines, inverters, and batteries have to keep running and keep responding, so availability and integrity outrank keeping data secret.
+- **Information technology (IT) puts confidentiality first (CIA).** In the enterprise the real hazard is data in the wrong hands, so confidentiality and integrity come before uptime.
 
 Same three concerns, opposite order. A platform that ignores the flip ends up forcing one world to live by the other's rules. Asset Insights Portal is built to honor both at once:
 
@@ -80,4 +80,4 @@ Field gateways speak the protocols that industrial equipment already uses, and t
 
 Because the platform is container-based and defined as code, it runs on the major public clouds and on-premise, including environments with data residency requirements. The architecture stays the same wherever it runs.
 
-Next: [get in touch](get-in-touch.md).
+Next: [pricing](pricing.md).

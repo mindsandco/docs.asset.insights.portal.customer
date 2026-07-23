@@ -28,4 +28,4 @@ Asset Insights Portal is delivered by Antire, and we prove value fast rather tha
 
 > We simplify AI and prove business value fast, so you can see the benefit before you scale.
 
-Next: [features](features.md).
+Next: [product tour](product-tour.md).

@@ -6,7 +6,7 @@ Simple and predictable. You pay a one-time base fee to get onboarded and connect
 
 **1. Base fee: onboarding and access**
 
-A one-time fee of **€13.400** that covers standing up your tenant, connecting your first assets, harmonizing your data into the canonical model, and giving your team access to the portal and APIs. This is what gets you live.
+A one-time fee of **€13,400** that covers standing up your tenant, connecting your first assets, harmonizing your data into the canonical model, and giving your team access to the portal and APIs. This is what gets you live.
 
 **2. Subscription: sized by registered fields**
 
@@ -16,10 +16,10 @@ Your recurring price is based on the number of **fields registered** in the plat
 
 | Tier | Registered fields | Best for | Price (EUR / month) |
 |------|-------------------|----------|---------------------|
-| **Starter** | Up to 5 | A single site or a focused proof of value | €1.350 |
-| **Growth** | Up to 20 | A small portfolio with core production and availability metrics | €2.000 |
-| **Scale** | Up to 50 | A growing portfolio tracking richer performance and event data | €3.350 |
-| **Enterprise** | Up to 100 | A large estate with many asset groups under monitoring | €6.700 |
+| **Starter** | Up to 5 | A single site or a focused proof of value | €1,350 |
+| **Growth** | Up to 20 | A small portfolio with core production and availability metrics | €2,000 |
+| **Scale** | Up to 50 | A growing portfolio tracking richer performance and event data | €3,350 |
+| **Enterprise** | Up to 100 | A large estate with many asset groups under monitoring | €6,700 |
 | **Custom** | 100+ | Large enterprises and portfolios | Let's talk |
 
 ### Every tier includes the full platform
@@ -56,7 +56,7 @@ A field is a group of assets you manage together, such as a solar site, a wind p
 
 ## Hosting
 
-Prefer not to run the platform yourself? We can host it for you as a fully managed service, so your team gets the value without operating any infrastructure. Hosting is priced by the size and demands of your deployment, from **€270 to €13.400 per month**. Tell us about your estate and we will quote the right fit.
+Prefer not to run the platform yourself? We can host it for you as a fully managed service, so your team gets the value without operating any infrastructure. Hosting is priced by the size and demands of your deployment, from **€270 to €13,400 per month**. Tell us about your estate and we will quote the right fit.
 
 ## Support agreements
 
