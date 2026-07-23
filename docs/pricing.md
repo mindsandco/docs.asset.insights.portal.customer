@@ -20,7 +20,7 @@ Your recurring price is based on the number of **fields registered** in the plat
 | **Growth** | Up to 20 | A small portfolio with core production and availability metrics | €2.000 |
 | **Scale** | Up to 50 | A growing portfolio tracking richer performance and event data | €3.350 |
 | **Enterprise** | Up to 100 | A large estate with many asset groups under monitoring | €6.700 |
-| **Custom** | 100+ | Big enterprises | Let's talk |
+| **Custom** | 100+ | Large enterprises and portfolios | Let's talk |
 
 > Every tier includes the full platform: field gateways and connectors, automatic harmonization, the management portal, GraphQL and REST APIs, role-based access with single sign-on, and white-label branding. Tiers differ only in how many fields you register, not in what the platform can do.
 
