@@ -46,6 +46,10 @@ Your recurring price is based on the number of **fields registered** in the plat
   <p class="pc-note">Indicative monthly subscription. A one-time base fee applies to get you live. Final quote confirmed with us.</p>
 </div>
 
+## Grows with your business
+
+Asset Insights Portal grows with your business. Add the properties you need and install the applications your teams rely on, right in the portal, so the platform keeps pace as your estate and your operation expand.
+
 ## What counts as a field?
 
 A field is a group of assets you manage together, such as a solar site, a wind park, or a portfolio cluster. You register the field once and the platform tracks every asset within it. You only pay for the fields you actually bring into the platform.
