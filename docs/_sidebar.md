@@ -5,6 +5,7 @@
 - [What we solve](what-we-solve.md)
 - [How we solve it](how-we-solve-it.md)
 - [Features](features.md)
+- [Product tour](product-tour.md)
 - [Architecture and cloud-native](architecture.md)
 - [Pricing](pricing.md)
 - [Get in touch](get-in-touch.md)
