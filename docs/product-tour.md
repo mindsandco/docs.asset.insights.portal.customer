@@ -4,19 +4,27 @@ A look at the management portal in daily use. Every screen below is the live pro
 
 ## Dashboard
 
-Build a dashboard around what each team needs to see. Start with built-in widgets for assets, gateways, users, and scheduled jobs, alongside platform health and asset status, so operators land here and immediately see whether anything needs attention. When you need something specific, build your own: widgets ship as plugins, written in the frontend framework your teams already know.
+The dashboard is where your team lands and takes in the whole installation at a glance. Assets, gateways, users, and scheduled jobs sit alongside platform health and asset status, so the moment someone opens the portal they can see whether everything is running or something needs attention, without hunting through separate screens.
+
+Build the view around what each team actually needs. Arrange the built-in widgets so the numbers that matter to an operator, a manager, or a technician are front and center, and use each widget as a starting point to move straight into the detail behind it. A focused dashboard turns the daily check into a few seconds rather than a tour of the platform.
+
+When the built-in widgets do not cover a specific need, build your own. Widgets ship as plugins, written in the frontend framework your teams already know, so you can surface exactly the data and controls your operation depends on and keep the dashboard growing with you.
 
 ![Management portal dashboard showing asset, gateway, user and job counts with platform health and status widgets](assets/screenshots/dashboard.png)
 
 ## Fields
 
-Fields group your gateways and assets, and each one rolls up online, offline, and disabled counts so you can spot a struggling site before it becomes a problem. It is also where you keep the field secure: operators generate and rotate the secrets and certificates that authenticate each gateway. Names and IDs are rarely enough on their own, so you can add [custom properties](#properties) to any field, gateway, or asset and capture the details your business runs on. When you want the documentation next to the equipment, create a field and upload it directly.
+Fields are how you organize your estate inside the platform. A field groups the gateways and assets you manage together, such as a solar site, a wind park, or a portfolio cluster, and rolls up online, offline, and disabled counts so you can spot a struggling site before it becomes a problem.
+
+A field is also where you keep the site secure. Operators generate and rotate the secrets and certificates that authenticate each gateway, so the connection between your equipment and the platform stays trusted and you can retire credentials the moment they should no longer work.
+
+Names and IDs are rarely enough on their own, so you can add [custom properties](#properties) to any field, gateway, or asset and capture the details your business runs on, from warranty dates to site contacts. When you want the paperwork next to the equipment, create a field and upload your documentation directly, so everything about a site lives in one place.
 
 ![Fields list showing fields with gateway and asset online, offline and disabled counts](assets/screenshots/fields.png)
 
 ## Uptime and health
 
-The platform continuously monitors the health of its own services. A 90-day history per service makes it easy to confirm the system is running and to see any past incidents at a glance.
+The platform keeps an eye on its own health so you do not have to. Every service reports in continuously and the platform runs its own checks around the clock, so a problem is caught as it happens rather than when someone notices data has stopped flowing. Each service shows a 90-day history, which makes it easy to confirm everything is running today and to look back at how the platform has behaved over time. If a past incident ever raises a question, the record is right there and you can see what happened and when at a glance. That transparency means you can trust the numbers you act on, because you always know the system behind them is up and running.
 
 ![Uptime page showing per-service health with 90-day uptime history bars](assets/screenshots/uptime.png)
 
