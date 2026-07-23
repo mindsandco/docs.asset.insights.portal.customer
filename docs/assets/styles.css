@@ -97,6 +97,28 @@ section.cover .cover-main blockquote p { color: var(--brand-beige); font-size: 1
 section.cover .cover-main { color: #ffffff; }
 section.cover.has-mask .mask { background: transparent; }
 
+/* Cover buttons — override vue.css theme-color (burgundy) buttons that vanish on burgundy gradient.
+   Docsify styles the last <p>'s links as buttons; last link is the filled primary. */
+section.cover .cover-main > p:last-child a {
+  border: 2px solid var(--brand-beige);
+  color: #ffffff !important;
+  background-color: transparent;
+}
+section.cover .cover-main > p:last-child a:last-child {
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+  color: var(--brand-black) !important;
+}
+section.cover .cover-main > p:last-child a:hover {
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+  color: var(--brand-black) !important;
+}
+
+/* Navbar links readable while cover is showing (burgundy gradient); revert on content pages */
+body:has(section.cover.show) .app-nav a { color: #ffffff; }
+body:has(section.cover.show) .app-nav a:hover { color: var(--brand-green); }
+
 /* Search */
 .search input { border: 1px solid var(--brand-beige-dark); }
 
