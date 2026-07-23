@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 660" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Asset Insights Portal data flow across three zones: OT edge assets push to Field Gateway; IT cloud Ingest publishes raw to a Dapr Pub/Sub, Worker subscribes, harmonizes, and publishes to a harmonized Pub/Sub in the SINKS customer zone that only customer custom apps subscribe to. IT platform services form their own mesh: Ingest calls Uptime and Management, Notifications sends heartbeat to Uptime, Management sends notifications, and Portal SPA uses Management as its BFF">
+  <style>
+    :root{
+      --bg:#ffffff; --ot:#f0fdf4; --it:#eff6ff; --sink:#faf5ff; --zoneStroke:#cbd5e1;
+      --node:#ffffff; --nodeStroke:#cbd5e1; --title:#0f172a; --sub:#64748b;
+      --line:#94a3b8; --label:#475569; --divider:#94a3b8; --queueTop:#e2e8f0; --harmTop:#e9d5ff;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#0b1220; --ot:#0e1f17; --it:#0d1a2b; --sink:#1a1230; --zoneStroke:#1e293b;
+        --node:#111c2e; --nodeStroke:#334155; --title:#e2e8f0; --sub:#94a3b8;
+        --line:#475569; --label:#94a3b8; --divider:#475569; --queueTop:#1e293b; --harmTop:#3b2864;
+      }
+    }
+    .bg{fill:var(--bg)}
+    .zone{stroke:var(--zoneStroke);stroke-width:1}
+    .ot{fill:var(--ot)} .it{fill:var(--it)} .sink{fill:var(--sink)}
+    .node{fill:var(--node);stroke:var(--nodeStroke);stroke-width:1.5}
+    .title{fill:var(--title);font-weight:700}
+    .sub{fill:var(--sub)}
+    .zlabel{fill:var(--label);font-weight:700;letter-spacing:.12em}
+    .flabel{fill:var(--label)}
+    .edge{fill:none;stroke:var(--line);stroke-width:1.6}
+    .ctrl{fill:none;stroke:#a78bfa;stroke-width:1.6;stroke-dasharray:6 5;opacity:.85}
+    .divider{stroke:var(--divider);stroke-width:1.4;stroke-dasharray:4 6;opacity:.7}
+    .sci{fill:#22c55e} .alm{fill:#f59e0b} .harm{fill:#38bdf8} .prov{fill:#a78bfa} .svc{fill:#64748b}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1380" height="660"/>
+
+  <!-- zones -->
+  <rect class="zone ot" x="16" y="76" width="380" height="524" rx="14"/>
+  <rect class="zone it" x="412" y="76" width="660" height="524" rx="14"/>
+  <rect class="zone sink" x="1088" y="76" width="276" height="524" rx="14"/>
+  <line class="divider" x1="404" y1="86" x2="404" y2="590"/>
+  <line class="divider" x1="1080" y1="86" x2="1080" y2="590"/>
+  <text class="zlabel" x="34" y="104" font-size="12">OT · FIELD (EDGE)</text>
+  <text class="zlabel" x="430" y="104" font-size="12">IT · CLOUD — KUBERNETES</text>
+  <text class="zlabel" x="1106" y="104" font-size="12">SINKS · CUSTOMER</text>
+
+  <!-- title -->
+  <text class="title" x="20" y="44" font-size="22">Asset Insights Portal — data flow</text>
+  <text class="sub" x="20" y="64" font-size="12.5">Push-only edge telemetry → raw bus → Worker harmonizes → harmonized bus · only customer apps subscribe · IT platform services form their own mesh</text>
+
+  <!-- ===================== connectors (drawn under nodes) ===================== -->
+  <!-- intake -->
+  <path id="c_tur" class="edge" d="M190,199 C214,199 214,304 236,304"/>
+  <path id="c_sol" class="edge" d="M190,299 C214,299 214,330 236,330"/>
+  <path id="c_bat" class="edge" d="M190,399 C214,399 214,356 236,356"/>
+  <!-- gateway -> ingest -->
+  <path id="c_gw"  class="edge" d="M386,320 C405,320 405,300 430,300"/>
+  <!-- ingest -> raw queue -->
+  <path id="c_in"  class="edge" d="M580,300 L614,300"/>
+  <!-- raw queue -> worker -->
+  <path id="c_rw"  class="edge" d="M730,300 L770,300"/>
+  <!-- worker -> harmonized queue (IT -> SINKS) -->
+  <path id="c_wh"  class="edge" d="M942,300 C1010,300 1020,266 1088,266"/>
+  <!-- harmonized queue -> customer apps -->
+  <path id="c_ca"  class="edge" d="M1150,322 C1150,360 1160,408 1170,408"/>
+  <path id="c_cb"  class="edge" d="M1150,322 C1150,412 1160,484 1170,484"/>
+  <!-- IT platform service graph -->
+  <path id="c_iu" class="edge" d="M520,350 C520,398 640,410 671,440"/>
+  <path id="c_im" class="edge" d="M556,350 C556,405 800,410 837,440"/>
+  <path id="c_nu" class="edge" d="M580,462 L596,462"/>
+  <path id="c_pm" class="edge" d="M928,462 L912,462"/>
+  <path id="c_mn" class="edge" d="M820,498 C760,542 620,542 505,502"/>
+
+  <!-- arrowheads (static) -->
+  <g fill="var(--line)">
+    <path d="M236,304 l-9,-4 v8 z"/>
+    <path d="M236,330 l-9,-4 v8 z"/>
+    <path d="M236,356 l-9,-4 v8 z"/>
+    <path d="M430,300 l-9,-4 v8 z"/>
+    <path d="M614,300 l-9,-4 v8 z"/>
+    <path d="M770,300 l-9,-4 v8 z"/>
+    <path d="M1088,266 l-9,-4 v8 z"/>
+    <path d="M1170,408 l-9,-4 v8 z"/>
+    <path d="M1170,484 l-9,-4 v8 z"/>
+    <!-- IT platform service graph -->
+    <path d="M671,440 l-4,-9 h8 z"/>
+    <path d="M837,440 l-4,-9 h8 z"/>
+    <path d="M596,462 l-9,-4 v8 z"/>
+    <path d="M912,462 l9,-4 v8 z"/>
+    <path d="M505,502 l-4,9 h8 z"/>
+  </g>
+
+  <!-- ===================== animated packets ===================== -->
+  <g>
+    <!-- intake (raw) -->
+    <circle class="sci" r="5"><animateMotion dur="2s" repeatCount="indefinite" begin="0s"><mpath href="#c_tur"/></animateMotion></circle>
+    <circle class="alm" r="4"><animateMotion dur="2s" repeatCount="indefinite" begin="1s"><mpath href="#c_tur"/></animateMotion></circle>
+    <circle class="sci" r="5"><animateMotion dur="2s" repeatCount="indefinite" begin="0.5s"><mpath href="#c_sol"/></animateMotion></circle>
+    <circle class="sci" r="5"><animateMotion dur="2s" repeatCount="indefinite" begin="0.3s"><mpath href="#c_bat"/></animateMotion></circle>
+    <circle class="alm" r="4"><animateMotion dur="2s" repeatCount="indefinite" begin="1.2s"><mpath href="#c_bat"/></animateMotion></circle>
+
+    <!-- gateway -> ingest (raw) -->
+    <circle class="sci" r="5"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0s"><mpath href="#c_gw"/></animateMotion></circle>
+    <circle class="alm" r="4"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0.8s"><mpath href="#c_gw"/></animateMotion></circle>
+
+    <!-- ingest -> raw queue -->
+    <circle class="sci" r="5"><animateMotion dur="1.4s" repeatCount="indefinite" begin="0.2s"><mpath href="#c_in"/></animateMotion></circle>
+    <circle class="alm" r="4"><animateMotion dur="1.4s" repeatCount="indefinite" begin="1s"><mpath href="#c_in"/></animateMotion></circle>
+
+    <!-- raw queue -> worker -->
+    <circle class="sci" r="5"><animateMotion dur="1.4s" repeatCount="indefinite" begin="0s"><mpath href="#c_rw"/></animateMotion></circle>
+    <circle class="alm" r="4"><animateMotion dur="1.4s" repeatCount="indefinite" begin="0.6s"><mpath href="#c_rw"/></animateMotion></circle>
+
+    <!-- worker -> harmonized queue -->
+    <circle class="harm" r="5"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0s"><mpath href="#c_wh"/></animateMotion></circle>
+    <circle class="harm" r="5"><animateMotion dur="1.8s" repeatCount="indefinite" begin="0.9s"><mpath href="#c_wh"/></animateMotion></circle>
+
+    <!-- harmonized -> customer apps -->
+    <circle class="harm" r="5"><animateMotion dur="1.7s" repeatCount="indefinite" begin="0.2s"><mpath href="#c_ca"/></animateMotion></circle>
+    <circle class="harm" r="5"><animateMotion dur="1.7s" repeatCount="indefinite" begin="0.6s"><mpath href="#c_cb"/></animateMotion></circle>
+
+    <!-- IT platform service graph -->
+    <circle class="svc" r="4"><animateMotion dur="2s" repeatCount="indefinite" begin="0s"><mpath href="#c_iu"/></animateMotion></circle>
+    <circle class="svc" r="4"><animateMotion dur="2s" repeatCount="indefinite" begin="0.7s"><mpath href="#c_im"/></animateMotion></circle>
+    <circle class="svc" r="4"><animateMotion dur="1.4s" repeatCount="indefinite" begin="0.3s"><mpath href="#c_nu"/></animateMotion></circle>
+    <circle class="svc" r="4"><animateMotion dur="1.4s" repeatCount="indefinite" begin="0.9s"><mpath href="#c_pm"/></animateMotion></circle>
+    <circle class="svc" r="4"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.5s"><mpath href="#c_mn"/></animateMotion></circle>
+  </g>
+
+  <!-- flow labels -->
+  <text class="flabel" x="398" y="288" font-size="10.5">signed HTTPS + JWT</text>
+  <text class="flabel" x="398" y="332" font-size="10.5">ECDSA · MessagePack</text>
+  <text class="flabel" x="584" y="292" font-size="10.5">publish raw</text>
+  <text class="flabel" x="732" y="292" font-size="10.5">subscribe</text>
+  <text class="flabel" x="948" y="278" font-size="10.5" fill="#38bdf8">publish harmonized</text>
+  <text class="sub" x="1255" y="358" font-size="10" text-anchor="middle">customer apps subscribe</text>
+  <text class="flabel" x="700" y="576" font-size="10.5" fill="#64748b" text-anchor="middle">IT platform service mesh</text>
+  <text class="flabel" x="1003" y="520" font-size="9.5" fill="#64748b" text-anchor="middle">Portal BFF</text>
+
+  <!-- ===================== nodes ===================== -->
+  <!-- edge assets -->
+  <g>
+    <rect class="node" x="40" y="170" width="150" height="58" rx="10"/>
+    <text class="title" x="60" y="196" font-size="14">🌬️  Turbine</text>
+    <text class="sub" x="60" y="214" font-size="10.5">OPC-UA / Modbus</text>
+
+    <rect class="node" x="40" y="270" width="150" height="58" rx="10"/>
+    <text class="title" x="60" y="296" font-size="14">☀️  Solar (PV)</text>
+    <text class="sub" x="60" y="314" font-size="10.5">OPC-UA / inverter API</text>
+
+    <rect class="node" x="40" y="370" width="150" height="58" rx="10"/>
+    <text class="title" x="60" y="396" font-size="14">🔋  Battery</text>
+    <text class="sub" x="60" y="414" font-size="10.5">BMS / OPC-UA</text>
+  </g>
+
+  <!-- field gateway -->
+  <rect class="node" x="236" y="276" width="150" height="108" rx="12"/>
+  <text class="title" x="252" y="304" font-size="14">Field Gateway</text>
+  <text class="sub" x="252" y="323" font-size="10.5">edge · Raspberry Pi</text>
+  <text class="sub" x="252" y="338" font-size="10.5">protocol connector</text>
+  <text class="sub" x="252" y="353" font-size="10.5">SQLite offline buffer</text>
+  <text class="sub" x="252" y="368" font-size="10.5">ECDSA sign · push-only</text>
+
+  <!-- ingest -->
+  <rect class="node" x="430" y="250" width="150" height="100" rx="12"/>
+  <text class="title" x="446" y="278" font-size="15">Ingest API</text>
+  <text class="sub" x="446" y="297" font-size="10.5">public HTTPS entry</text>
+  <text class="sub" x="446" y="312" font-size="10.5">issue JWT · verify sig</text>
+  <text class="sub" x="446" y="327" font-size="10.5">enrich · publish raw</text>
+  <text class="sub" x="446" y="342" font-size="10.5">→ 202 Accepted</text>
+
+  <!-- raw queue -->
+  <g>
+    <path class="node" d="M614,252 a58,15 0 0 1 116,0 v96 a58,15 0 0 1 -116,0 z"/>
+    <ellipse cx="672" cy="252" rx="58" ry="15" fill="var(--queueTop)" stroke="var(--nodeStroke)" stroke-width="1.5"/>
+    <text class="title" x="672" y="290" font-size="13" text-anchor="middle">Dapr Pub/Sub</text>
+    <text class="sub" x="672" y="307" font-size="10.5" text-anchor="middle">raw · RabbitMQ</text>
+    <text class="sub" x="672" y="321" font-size="10" text-anchor="middle">(any queue)</text>
+  </g>
+
+  <!-- worker -->
+  <rect class="node" x="770" y="258" width="172" height="84" rx="12"/>
+  <text class="title" x="786" y="286" font-size="15">Worker</text>
+  <text class="sub" x="786" y="305" font-size="10.5">subscribe raw topics</text>
+  <text class="sub" x="786" y="320" font-size="10.5">HarmonizerFactory</text>
+  <text class="sub" x="786" y="335" font-size="10.5">→ HarmonizedV1</text>
+
+  <!-- IT platform services -->
+  <g>
+    <rect class="node" x="430" y="440" width="150" height="58" rx="10"/>
+    <text class="title" x="446" y="466" font-size="13.5">Notifications</text>
+    <text class="sub" x="446" y="484" font-size="10.5">templated alerts</text>
+
+    <rect class="node" x="596" y="440" width="150" height="58" rx="10"/>
+    <text class="title" x="612" y="466" font-size="13.5">Uptime</text>
+    <text class="sub" x="612" y="484" font-size="10.5">heartbeat tracking</text>
+
+    <rect class="node" x="762" y="440" width="150" height="58" rx="10"/>
+    <text class="title" x="778" y="466" font-size="13.5">Management</text>
+    <text class="sub" x="778" y="484" font-size="9.5">GraphQL+REST · event-sourced</text>
+
+    <rect class="node" x="928" y="440" width="150" height="58" rx="10"/>
+    <text class="title" x="944" y="466" font-size="13.5">Portal SPA</text>
+    <text class="sub" x="944" y="484" font-size="10.5">React · admin &amp; insights</text>
+  </g>
+
+  <!-- harmonized queue (customer-facing) -->
+  <g>
+    <path class="node" d="M1088,210 a62,16 0 0 1 124,0 v112 a62,16 0 0 1 -124,0 z"/>
+    <ellipse cx="1150" cy="210" rx="62" ry="16" fill="var(--harmTop)" stroke="var(--nodeStroke)" stroke-width="1.5"/>
+    <text class="title" x="1150" y="252" font-size="13" text-anchor="middle">Harmonized Pub/Sub</text>
+    <text class="sub" x="1150" y="269" font-size="10.5" text-anchor="middle">HarmonizedV1 topic</text>
+    <text class="sub" x="1150" y="283" font-size="10" text-anchor="middle">(customer-facing)</text>
+  </g>
+
+  <!-- customer custom apps -->
+  <g>
+    <rect class="node" x="1170" y="382" width="170" height="56" rx="10"/>
+    <text class="title" x="1186" y="408" font-size="13.5">Customer app</text>
+    <text class="sub" x="1186" y="425" font-size="10.5">analytics · BI</text>
+
+    <rect class="node" x="1170" y="458" width="170" height="56" rx="10"/>
+    <text class="title" x="1186" y="484" font-size="13.5">Customer app</text>
+    <text class="sub" x="1186" y="501" font-size="10.5">SCADA · ERP · ML</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="11">
+    <circle class="sci" cx="40" cy="628" r="5"/><text class="flabel" x="52" y="632">scientific (raw)</text>
+    <circle class="alm" cx="168" cy="628" r="5"/><text class="flabel" x="180" y="632">alarm (raw)</text>
+    <circle class="harm" cx="278" cy="628" r="5"/><text class="flabel" x="290" y="632">harmonized</text>
+    <circle class="svc" cx="380" cy="628" r="5"/><text class="flabel" x="392" y="632">service call</text>
+  </g>
+</svg>

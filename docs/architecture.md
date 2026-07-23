@@ -14,6 +14,10 @@ Asset Insights Portal is organized as three tiers, following the path data takes
 
 The data path in practice: a field gateway sends signed data to the ingest service, which publishes it onto the event bus. A worker harmonizes it into the canonical model and republishes it, and downstream services for notifications, uptime, and the management portal consume it from there.
 
+![Asset Insights Portal data flow: edge assets push signed telemetry through the field gateway to ingest, onto the event bus, through the harmonizing worker, and out to downstream services, while management provisions the credentials and certificates the edge relies on](assets/architecture-flow.svg ':size=100%')
+
+*Data flows left to right: assets to gateway to ingest to the event bus, harmonized by the worker, then out to notifications, uptime, and the management portal. Management runs the control plane in the other direction, provisioning the client credentials, certificates, and registry the edge signs and pushes with.*
+
 ## Built cloud-native from the ground up
 
 The platform follows cloud-native fundamentals as defined by the Cloud Native Computing Foundation. In practice that means it is designed to run reliably in the cloud, scale with demand, and evolve safely over time.
