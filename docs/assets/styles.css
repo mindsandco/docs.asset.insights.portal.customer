@@ -163,6 +163,21 @@ body:has(section.cover.show) .app-nav a:hover { color: var(--brand-green); }
 .pc-hint { color: #5a4a50; margin: 0.4rem 0 0; }
 .pc-note { color: #8a7a80; font-size: 0.85rem; margin: 0.9rem 0 0; }
 
+/* Images scale within content */
+.markdown-section img { max-width: 100%; height: auto; }
+
+/* Responsive / mobile */
+@media (max-width: 768px) {
+  .markdown-section { max-width: 100%; }
+  /* Wide tables scroll horizontally instead of overflowing the viewport */
+  .markdown-section table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  section.cover .cover-main > h1 { font-size: 1.9rem; }
+  section.cover .cover-main blockquote p { font-size: 1.05rem; }
+  .price-calc { padding: 1rem 1.1rem; }
+  .price-calc input { width: 100%; box-sizing: border-box; }
+  .pc-price { font-size: 1.6rem; }
+}
+
 /* Search */
 .search input { border: 1px solid var(--brand-beige-dark); }
 
