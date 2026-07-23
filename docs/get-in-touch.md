@@ -4,7 +4,7 @@ Ready to see what a single trusted view of your assets could do for your teams? 
 
 ## How we start
 
-We prove value fast rather than asking you to commit blind — validating AI-driven operations in a focused **4–8 week** sprint.
+We prove value fast rather than asking you to commit blind.
 
 1. **Understand your goals.** A short conversation to learn what you are trying to achieve and where your asset data lives today.
 2. **Run a focused pilot.** We stand up Asset Insights Portal on a slice of your own data around a concrete use case, such as predictive maintenance or alarm reduction, so you can see the benefit for yourself.
