@@ -26,4 +26,36 @@ Extend the platform with integrations and add-ons from a built-in marketplace, s
 
 ![Marketplace showing an installed application card](assets/screenshots/marketplace.png)
 
+## Properties
+
+Assets, fields, and gateways carry dynamic properties, so you can capture the details that matter to your operation without waiting for a code change. Add the fields your teams need and the platform stores them alongside the standard data.
+
+![Dynamic properties page showing custom properties on assets, fields and gateways](assets/screenshots/properties.png)
+
+## Branding
+
+Make the portal your own. Set the company name, logo, favicon, background, and theme colors, and the look carries through the portal and the sign-in screen, so your teams work in a familiar environment from the first click.
+
+![Branding page showing company name, logo, favicon and theme color settings](assets/screenshots/branding.png)
+
+## Tours
+
+Guided tours walk new users through the portal in context, so teams get productive faster without a separate training session.
+
+## Jobs
+
+Scheduled jobs run recurring work on a set cadence, so routine tasks happen on time without anyone remembering to trigger them.
+
+![Jobs page showing scheduled jobs with their cadence and status](assets/screenshots/jobs.png)
+
+## User administration
+
+Manage the people who use the platform from one place: invite users, assign their roles, and control access as teams change. Sign-in and identity are handled through Keycloak.
+
+![User administration page showing users with their assigned roles](assets/screenshots/users.png)
+
+## Role administration
+
+Named roles and fine-grained permissions decide who can see and change what, from portfolio-wide administrators to technicians and data consumers. Grant only the access each person needs, all enforced through Keycloak.
+
 Next: [architecture and cloud-native](architecture.md).
