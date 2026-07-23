@@ -2,6 +2,25 @@
 
 You do not need to read this page to get value from Asset Insights Portal. It is here for the technical and security teams who want to understand what runs underneath, and to show that the platform is built on solid, modern foundations.
 
+## The bridge between OT and IT
+
+The platform's job is to connect two worlds that rank their priorities in opposite order. Understanding that difference is the fastest way to understand the design.
+
+![The same three security concerns ranked in opposite order: operational technology puts availability first (AIC), information technology puts confidentiality first (CIA), and Asset Insights Portal bridges the two](assets/ot-it-bridge.svg ':size=100%')
+
+Security teams weigh three concerns: **confidentiality**, **integrity**, and **availability**. The order they rank them in is what separates the plant floor from the enterprise.
+
+- **Operational technology (OT) puts availability first — AIC.** On the plant floor the real hazard is a process that stops. Turbines, inverters, and batteries have to keep running and keep responding, so availability and integrity outrank keeping data secret.
+- **Information technology (IT) puts confidentiality first — CIA.** In the enterprise the real hazard is data in the wrong hands, so confidentiality and integrity come before uptime.
+
+Same three concerns, opposite order. A platform that ignores the flip ends up forcing one world to live by the other's rules. Asset Insights Portal is built to honor both at once:
+
+- **Availability, for the OT side.** The field gateway opens outbound connections only and buffers data locally, so the plant network is never exposed and never waits on the cloud. A site keeps running and loses no data even when the link drops.
+- **Integrity, the concern both sides share.** Every payload is signed at the edge and verified centrally, and the canonical model is versioned, so the readings people and systems act on are genuine and traceable.
+- **Confidentiality, for the IT side.** Access uses single sign-on and role-based permissions, services authenticate separately from users, data is encrypted in transit, and secrets are managed centrally and can be rotated or revoked.
+
+The rest of this page describes the tiers and technology that deliver this.
+
 ## Three tiers, from the field to the user
 
 Asset Insights Portal is organized as three tiers, following the path data takes from an asset to the people and systems that use it.
@@ -38,9 +57,9 @@ The platform is built on a modern, well-supported stack.
 - **Data.** A relational database for the management model, with an event-sourced write model so every change is captured as a recorded event.
 - **Identity.** Keycloak for authentication and authorization, supporting single sign-on, named roles, fine-grained permissions, and invited-user onboarding.
 
-## Bridging operational and information technology
+## Open by design, not locked in
 
-The platform is built to connect the operational technology on the plant floor with the information technology of the enterprise. Field gateways speak the protocols that industrial equipment uses, and the central platform presents that data through the standard APIs that enterprise systems expect. This lowers integration cost and avoids locking you into any single vendor.
+Field gateways speak the protocols that industrial equipment already uses, and the central platform presents harmonized data through the standard APIs that enterprise systems expect. This lowers integration cost and avoids locking you into any single vendor on either side of the bridge.
 
 ## Security and trust by design
 

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif" role="img" aria-label="Asset Insights Portal bridges two priority models. Operational technology (OT) ranks its priorities as AIC: Availability first, then Integrity, then Confidentiality, because a stopped process is the real hazard on the plant floor. Information technology (IT) ranks them as CIA: Confidentiality first, then Integrity, then Availability, to protect the business's data. The same three concerns are ordered in opposite directions. The platform sits in the middle and honors both: an egress-only, locally buffered edge protects OT availability, signed and versioned data protects the shared concern of integrity, and single sign-on, role-based access, and encryption protect IT confidentiality.">
+  <style>
+    :root{
+      --bg:#ffffff; --ot:#f0fdf4; --it:#eff6ff; --zoneStroke:#cbd5e1;
+      --node:#ffffff; --nodeStroke:#cbd5e1; --title:#0f172a; --sub:#64748b;
+      --label:#475569; --chip:#ffffff; --chipStroke:#e2e8f0;
+      --avail:#22c55e; --integ:#38bdf8; --conf:#a78bfa;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#0b1220; --ot:#0e1f17; --it:#0d1a2b; --zoneStroke:#1e293b;
+        --node:#111c2e; --nodeStroke:#334155; --title:#e2e8f0; --sub:#94a3b8;
+        --label:#94a3b8; --chip:#0f1a2b; --chipStroke:#26374f;
+        --avail:#4ade80; --integ:#7dd3fc; --conf:#c4b5fd;
+      }
+    }
+    .bg{fill:var(--bg)}
+    .zone{stroke:var(--zoneStroke);stroke-width:1}
+    .ot{fill:var(--ot)} .it{fill:var(--it)}
+    .node{fill:var(--node);stroke:var(--nodeStroke);stroke-width:1.5}
+    .chip{fill:var(--chip);stroke:var(--chipStroke);stroke-width:1.5}
+    .title{fill:var(--title);font-weight:700}
+    .sub{fill:var(--sub)}
+    .zlabel{fill:var(--label);font-weight:700;letter-spacing:.12em}
+    .rank{fill:#ffffff;font-weight:700}
+    .link{fill:none;stroke-width:3;opacity:.9}
+    .l-avail{stroke:var(--avail)} .l-integ{stroke:var(--integ)} .l-conf{stroke:var(--conf)}
+    .b-avail{fill:var(--avail)} .b-integ{fill:var(--integ)} .b-conf{fill:var(--conf)}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1200" height="600"/>
+
+  <!-- headings -->
+  <text class="title" x="40" y="42" font-size="22">Bridging OT and IT — the same concerns, ranked in opposite order</text>
+  <text class="sub" x="40" y="66" font-size="13">Operational technology puts availability first (AIC). Information technology puts confidentiality first (CIA). The platform is built to honor both.</text>
+
+  <!-- zones -->
+  <rect class="zone ot" x="24" y="96" width="320" height="452" rx="16"/>
+  <rect class="zone it" x="856" y="96" width="320" height="452" rx="16"/>
+  <text class="zlabel" x="44" y="128" font-size="12.5">OPERATIONAL TECHNOLOGY</text>
+  <text class="zlabel" x="1156" y="128" font-size="12.5" text-anchor="end">INFORMATION TECHNOLOGY</text>
+  <text class="title" x="44" y="156" font-size="16" fill="var(--avail)">AIC</text>
+  <text class="title" x="1156" y="156" font-size="16" text-anchor="end" fill="var(--conf)">CIA</text>
+
+  <!-- connecting lines (same concern, opposite rank) drawn under the bridge card -->
+  <path class="link l-avail" d="M304,214 L896,450"/>
+  <path class="link l-integ" d="M304,332 L896,332"/>
+  <path class="link l-conf"  d="M304,450 L896,214"/>
+
+  <!-- ================= OT priority stack (Availability, Integrity, Confidentiality) ================= -->
+  <!-- row 1: Availability -->
+  <rect class="chip" x="44" y="180" width="260" height="68" rx="12"/>
+  <circle class="b-avail" cx="76" cy="214" r="15"/><text class="rank" x="76" y="219" font-size="15" text-anchor="middle">1</text>
+  <text class="title" x="104" y="209" font-size="15">Availability</text>
+  <text class="sub" x="104" y="228" font-size="10.5">keep the process running</text>
+
+  <!-- row 2: Integrity -->
+  <rect class="chip" x="44" y="298" width="260" height="68" rx="12"/>
+  <circle class="b-integ" cx="76" cy="332" r="15"/><text class="rank" x="76" y="337" font-size="15" text-anchor="middle">2</text>
+  <text class="title" x="104" y="327" font-size="15">Integrity</text>
+  <text class="sub" x="104" y="346" font-size="10.5">trust the readings and commands</text>
+
+  <!-- row 3: Confidentiality -->
+  <rect class="chip" x="44" y="416" width="260" height="68" rx="12"/>
+  <circle class="b-conf" cx="76" cy="450" r="15"/><text class="rank" x="76" y="455" font-size="15" text-anchor="middle">3</text>
+  <text class="title" x="104" y="445" font-size="15">Confidentiality</text>
+  <text class="sub" x="104" y="464" font-size="10.5">protect what the data reveals</text>
+
+  <text class="sub" x="174" y="522" font-size="11" text-anchor="middle">A stopped line stops production.</text>
+
+  <!-- ================= IT priority stack (Confidentiality, Integrity, Availability) ================= -->
+  <!-- row 1: Confidentiality -->
+  <rect class="chip" x="896" y="180" width="260" height="68" rx="12"/>
+  <circle class="b-conf" cx="928" cy="214" r="15"/><text class="rank" x="928" y="219" font-size="15" text-anchor="middle">1</text>
+  <text class="title" x="956" y="209" font-size="15">Confidentiality</text>
+  <text class="sub" x="956" y="228" font-size="10.5">protect the business's data</text>
+
+  <!-- row 2: Integrity -->
+  <rect class="chip" x="896" y="298" width="260" height="68" rx="12"/>
+  <circle class="b-integ" cx="928" cy="332" r="15"/><text class="rank" x="928" y="337" font-size="15" text-anchor="middle">2</text>
+  <text class="title" x="956" y="327" font-size="15">Integrity</text>
+  <text class="sub" x="956" y="346" font-size="10.5">keep the data accurate</text>
+
+  <!-- row 3: Availability -->
+  <rect class="chip" x="896" y="416" width="260" height="68" rx="12"/>
+  <circle class="b-avail" cx="928" cy="450" r="15"/><text class="rank" x="928" y="455" font-size="15" text-anchor="middle">3</text>
+  <text class="title" x="956" y="445" font-size="15">Availability</text>
+  <text class="sub" x="956" y="464" font-size="10.5">keep systems reachable</text>
+
+  <text class="sub" x="1026" y="522" font-size="11" text-anchor="middle">A breach exposes the business.</text>
+
+  <!-- ================= bridge card (opaque, on top of the crossing lines) ================= -->
+  <rect class="node" x="468" y="266" width="264" height="128" rx="16"/>
+  <text class="title" x="600" y="312" font-size="16" text-anchor="middle">Asset Insights Portal</text>
+  <text class="sub" x="600" y="334" font-size="12" text-anchor="middle">the bridge</text>
+  <text class="sub" x="600" y="360" font-size="10.5" text-anchor="middle">egress-only edge · signed, versioned data</text>
+  <text class="sub" x="600" y="376" font-size="10.5" text-anchor="middle">single sign-on · role-based access</text>
+
+  <!-- legend -->
+  <g font-size="11.5">
+    <circle class="b-avail" cx="468" cy="576" r="6"/><text class="sub" x="482" y="580">Availability</text>
+    <circle class="b-integ" cx="588" cy="576" r="6"/><text class="sub" x="602" y="580">Integrity</text>
+    <circle class="b-conf" cx="688" cy="576" r="6"/><text class="sub" x="702" y="580">Confidentiality</text>
+  </g>
+</svg>
