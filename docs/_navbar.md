@@ -4,4 +4,5 @@
 - [What we solve](what-we-solve.md)
 - [Features](features.md)
 - [Architecture](architecture.md)
+- [Pricing](pricing.md)
 - [Get in touch](get-in-touch.md)

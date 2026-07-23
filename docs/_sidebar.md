@@ -6,4 +6,5 @@
 - [How we solve it](how-we-solve-it.md)
 - [Features](features.md)
 - [Architecture and cloud-native](architecture.md)
+- [Pricing](pricing.md)
 - [Get in touch](get-in-touch.md)
