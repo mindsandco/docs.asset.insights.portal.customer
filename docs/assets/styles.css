@@ -30,6 +30,10 @@ body { background: var(--brand-beige); color: var(--brand-black); }
 .sidebar ul li.active > a { color: var(--brand-burgundy); border-right: 3px solid var(--brand-green); font-weight: 700; }
 
 /* Navbar */
+/* Pin the nav's left edge at the sidebar width so that when the links wrap
+   onto multiple lines the block grows upward/rightward, never leftward into
+   the sidebar column. */
+.app-nav { left: 300px; text-align: right; }
 .app-nav a { color: var(--brand-burgundy-dark); font-weight: 600; }
 .app-nav a:hover { color: var(--brand-burgundy); }
 
