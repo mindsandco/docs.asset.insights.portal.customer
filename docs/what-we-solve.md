@@ -1,6 +1,10 @@
 # What we solve
 
-Running assets well depends on knowing their true state at any moment. In most organizations that knowledge is spread across many systems and people, which makes it slow to gather and hard to trust. Asset Insights Portal is built to close that gap. Here are the challenges it turns into opportunities.
+Running assets well depends on knowing their true state at any moment. In most organizations that knowledge is spread across many systems and people, which makes it slow to gather and hard to trust. Asset Insights Portal is built to close that gap — connecting operational data from SCADA, sensors, on-board systems, control systems, and service logs into one governed foundation, so teams can move from firefighting to predictive, fleet-wide operations. Here are the challenges it turns into opportunities, and the outcomes they unlock:
+
+- **−50%** mean time to repair
+- **+30%** first-time-fix rate
+- **−25%** operational expenditure
 
 ## Data locked in operational silos
 
@@ -25,6 +29,12 @@ The portal replaces one-off pipelines with reusable, vendor-agnostic components 
 When the data is incomplete or hard to reach, decisions get made on partial information or delayed until someone can dig out the numbers. Both outcomes carry real cost.
 
 The portal delivers complete, current data into the analytics and operational systems where decisions are made, so choices about maintenance, investment, and risk are grounded in what is actually happening.
+
+## Reactive maintenance and slow, costly repairs
+
+When failures are only visible once they happen, teams run reactively: unplanned downtime, repeat truck rolls, and diagnosis that starts from scratch each time. Without a fleet-wide view, the same fault gets solved over and over instead of once.
+
+The portal turns harmonized operational data into predictive maintenance and early failure detection, so problems are caught before they stop a process. Faster, better-informed diagnosis raises the first-time-fix rate, and fleet-level visibility lets a fix or optimization proven on one asset roll out across the estate.
 
 ## Growth that outpaces the tools
 

@@ -55,6 +55,9 @@ The platform tracks the health of its own services continuously, so operators kn
 ### Observability built in
 Every service emits traces, metrics, and structured logs through OpenTelemetry to a standard monitoring stack, so operators have clear visibility into how the platform is behaving.
 
+### Compliance-ready foundation
+Governance and cybersecurity are built into every step rather than bolted on. Egress-only edge, signed data integrity, single sign-on with fine-grained access control, encryption, and full audit trails give you a foundation designed to meet NIS2, IEC 62443, GDPR, and the EU AI Act.
+
 ## Deploy anywhere
 
 ### Vendor-agnostic, Kubernetes-first

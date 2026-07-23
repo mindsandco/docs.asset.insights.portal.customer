@@ -1,6 +1,6 @@
 # How we solve it
 
-Asset Insights Portal follows a simple path from raw signals to trusted data your teams and systems can use: connect, harmonize, distribute, and act, all on a foundation that is governed and secure. Each step builds on the one before it.
+Asset Insights Portal follows a simple path from siloed systems to one governed operational foundation your teams and systems can build on: connect, harmonize, distribute, and act, all on a foundation that is governed and secure. Each step builds on the one before it, and together they turn raw signals into predictive maintenance, faster diagnosis, and fleet-wide optimization.
 
 ## 1. Connect at the edge
 
@@ -24,7 +24,7 @@ Every step runs on a foundation of strong identity and data integrity. Access is
 
 ## Delivered the Antire way
 
-Asset Insights Portal is delivered by Antire, and we prove value fast rather than asking you to commit blind. We start by understanding your goals, stand up a focused pilot on your own data, and scale once the value is clear. Technology is the enabler. The outcome for your people and your operation is what we measure.
+Asset Insights Portal is delivered by Antire, and we prove value fast rather than asking you to commit blind. We start by understanding your goals, stand up a focused pilot on your own data around a concrete use case such as predictive maintenance or alarm reduction, and scale once the value is clear. Technology is the enabler. The outcome for your people and your operation is what we measure.
 
 > We simplify AI and prove business value fast, so you can see the benefit before you scale.
 
