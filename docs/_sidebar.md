@@ -6,6 +6,7 @@
 - [How we solve it](how-we-solve-it.md)
 - [Product tour](product-tour.md)
 - [Features](features.md)
+- [Edge connectors](edge-connectors.md)
 - [Architecture](architecture.md)
 - [Pricing](pricing.md)
 - [Get in touch](get-in-touch.md)

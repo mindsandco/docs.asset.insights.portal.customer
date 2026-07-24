@@ -5,7 +5,7 @@ Every feature below exists to serve one goal: getting trusted, standardized asse
 ## Connect your assets
 
 ### Field gateway and edge connectors
-Connect assets over the industrial and IoT protocols they already speak, including OPC UA, MQTT, and Bluetooth, as well as file-based sources. Connectors are built on a shared software development kit, so bringing a new source online means writing the protocol-specific part and letting the platform handle the rest.
+Connect assets over the protocols they already speak. Bluetooth is available today for corrosion and condition sensors, with OPC UA, MQTT, Modbus TCP, file-based sources, and more on the way. See the [edge connectors](edge-connectors.md) page for the full list. Connectors are built on a shared software development kit, so bringing a new source online means writing the protocol-specific part and letting the platform handle the rest.
 
 ### Reliable delivery from the edge
 Gateways buffer data locally and only mark it as sent once the central platform confirms receipt, with automatic retry and backoff. If a site loses connectivity, no data is lost. It is delivered when the link returns.
