@@ -29,7 +29,7 @@ For the security teams: the technical [architecture](architecture.md) page expla
 
 Asset Insights Portal is about the outcome. It gives your people clarity: a place where the data is complete, current, and trustworthy, so the work of running your assets gets easier.
 
-Trust is built into how the platform works rather than assumed. Data is signed at the edge and verified centrally, harmonized into a versioned model, and governed by fine-grained access control, so the data people build on holds up to scrutiny. It is a dependable foundation for the analytics and AI initiatives that build on top of it.
+Trust is built into how the platform works rather than assumed. Data is signed at the edge and verified centrally, harmonized into a versioned model, and governed by fine-grained access control, so the data people build on holds up to scrutiny. For your security, your asset data is streamed through the platform rather than stored in it, so your operational data stays in your hands and there is less of it sitting at rest to protect. It is a dependable foundation for the analytics and AI initiatives that build on top of it.
 
 > The best asset decisions come from people who can rely on their data. The portal exists to give them data they can rely on.
 

@@ -37,6 +37,10 @@ The data path in practice: a field gateway sends signed data to the ingest servi
 
 *Data flows left to right: assets to gateway to ingest to the event bus, harmonized by the worker, then out to notifications, uptime, and the management portal. Management runs the control plane in the other direction, provisioning the client credentials, certificates, and registry the edge signs and pushes with.*
 
+## Your asset data streams through, it is not stored
+
+For your security, Asset Insights Portal treats your operational asset data as a stream rather than a store. Readings move through the event pipeline, from the field gateway to ingest, get harmonized by the worker, and are delivered to the systems that subscribe to them, without the platform holding on to a lasting copy of your production and telemetry history. What the platform keeps is the configuration and management model it needs to run the installation, not a warehouse of your operational data. This keeps your sensitive asset data in your hands, shrinks the amount of data sitting at rest, and leaves far less exposed if anyone ever gets in.
+
 ## Built cloud-native from the ground up
 
 The platform follows cloud-native fundamentals as defined by the Cloud Native Computing Foundation. In practice that means it is designed to run reliably in the cloud, scale with demand, and evolve safely over time.
