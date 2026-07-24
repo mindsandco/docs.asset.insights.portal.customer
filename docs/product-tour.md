@@ -14,13 +14,14 @@ When the built-in widgets do not cover a specific need, build your own. Widgets 
 
 ## Fields
 
-Fields are how you organize your estate inside the platform. A field groups the gateways and assets you manage together, such as a solar site, a wind park, or a portfolio cluster, and rolls up online, offline, and disabled counts so you can spot a struggling site before it becomes a problem.
+Fields are how you organize your asset portfolio inside the platform. A field groups the gateways and assets you manage, such as a solar site, a wind park, a hybrid solar, wind, battery park or any kind of data generating assets. It tracks the status as online, offline, and disabled so you can spot a struggling field before it becomes a problem. 
 
 A field is also where you keep the site secure. Operators generate and rotate the secrets and certificates that authenticate each gateway, so the connection between your equipment and the platform stays trusted and you can retire credentials the moment they should no longer work.
 
 Names and IDs are rarely enough on their own, so you can add [custom properties](#properties) to any field, gateway, or asset and capture the details your business runs on, from warranty dates to site contacts. When you want the paperwork next to the equipment, create a field and upload your documentation directly, so everything about a site lives in one place.
 
 ![Fields list showing fields with gateway and asset online, offline and disabled counts](assets/screenshots/fields.png)
+![Fields details showing fields details with gateway and asset menu, and status](assets/screenshots/fieldDetails.png)
 
 ## Uptime and health
 
