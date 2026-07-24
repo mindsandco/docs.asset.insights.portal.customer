@@ -15,7 +15,7 @@ Asset Insights Portal is built by Antire, a people-first AI consultancy. Born in
 - **Connect any asset.** Bring data in from many vendors, protocols, and sites over the standards your equipment already speaks.
 - **Trust the data.** Automatic harmonization, rule-based validation, and signed delivery mean the data people act on is clean, consistent, and genuine.
 - **Put data to work.** Harmonized data is available through open APIs, so your analytics, ERP, and operational systems can use it straight away.
-- **Grow without friction.** A cloud-native design scales with your asset base, from a single site to a global estate, on the cloud or on-premise.
+- **Grow without friction.** The platform scales with your asset base, from a single site to a global estate, on the cloud or on-premise.
 
 ## Start here
 

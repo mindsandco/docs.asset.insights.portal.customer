@@ -63,4 +63,4 @@ Governance and cybersecurity are built into every step rather than bolted on. Eg
 ### Vendor-agnostic, Kubernetes-first
 The platform is container-based and runs on Kubernetes, on Azure, AWS, or on-premise. Delivery is automated through GitOps, so the same platform runs wherever your data needs to live, including environments with data residency requirements.
 
-Next: [architecture and cloud-native](architecture.md).
+Next: [architecture](architecture.md).

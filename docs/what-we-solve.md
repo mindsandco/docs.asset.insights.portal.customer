@@ -40,7 +40,7 @@ The portal turns harmonized operational data into predictive maintenance and ear
 
 As the asset base grows, spreadsheets and point tools stop coping. What worked for one site rarely works for fifty.
 
-The portal is cloud-native and scales with you, so adding assets, sites, users, and data sources does not mean rebuilding how you work.
+The portal scales with you, so adding assets, sites, users, and data sources does not mean rebuilding how you work.
 
 ## Uncertainty about data you can trust
 

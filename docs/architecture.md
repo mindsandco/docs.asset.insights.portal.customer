@@ -1,4 +1,4 @@
-# Architecture and cloud-native
+# Architecture
 
 You do not need to read this page to get value from Asset Insights Portal. It is here for the technical and security teams who want to understand what runs underneath, and to show that the platform is built on solid, modern foundations.
 
