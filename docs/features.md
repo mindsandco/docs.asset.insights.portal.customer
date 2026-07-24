@@ -30,22 +30,22 @@ Data moves through the platform as events, so information flows through as it ar
 ## Access and administer
 
 ### Management portal
-A single administrative surface for the whole installation: clients and applications, users, roles, assets, fields, gateways, dynamic properties, certificates and secrets, scheduled jobs, and extensions. Built as a modern web application that operators and administrators can use directly.
+A single administrative surface for the whole installation: clients and applications, users, roles, assets, fields, gateways, dynamic properties, certificates and secrets, scheduled jobs, and extensions. Walk through it in the [product tour](product-tour.md).
 
 ### Custom properties and documentation
-Names and IDs come standard on every field, gateway, and asset, and on their own they rarely capture everything your business needs to track. Custom properties let you extend any field, gateway, or asset with your own details, from warranty dates to maintenance contacts, so the information your operation runs on stays right next to the equipment it belongs to. When you want the paperwork to live with the equipment, upload your documentation straight to a field. Manuals, warranty certificates, and inspection reports sit alongside the assets they cover, so everything about a field is in one place.
+Extend any field, gateway, or asset with your own properties, from warranty dates to maintenance contacts, and upload documentation straight to a field so manuals and certificates live with the equipment they cover. See it in the [product tour](product-tour.md#properties).
 
 ### GraphQL and REST APIs
 Harmonized data and administration are exposed through a documented GraphQL API, with REST where it fits. Consuming systems such as analytics platforms, ERP, and SCADA query the data they need, and a published API kit makes integration straightforward.
 
 ### Role-based access and single sign-on
-Access is controlled through your identity provider using named roles and fine-grained permissions, so people see and do only what their role allows. Invited users are onboarded through a simple secure sign-in link.
+Named roles and fine-grained permissions control what each person can see and do, with sign-in through your own identity provider and secure invite links for new users. See it in the [product tour](product-tour.md#role-administration).
 
 ### White-label branding
-Each tenant can apply its own company name, logo, favicon, background, and theme, applied to both the portal and the sign-in experience, so the platform can carry your brand or your customer's.
+Apply your own company name, logo, favicon, background, and theme across both the portal and the sign-in experience, so the platform carries your brand or your customer's. See it in the [product tour](product-tour.md#branding).
 
 ### Extensions marketplace
-Extend the platform with integrations and add-ons through a built-in marketplace, so new capabilities can be added without rebuilding the core.
+Add integrations and add-ons through a built-in marketplace, so new capabilities appear in the portal without rebuilding the core. See it in the [product tour](product-tour.md#marketplace).
 
 ## Operate with confidence
 
@@ -53,7 +53,7 @@ Extend the platform with integrations and add-ons through a built-in marketplace
 Templated notifications are dispatched automatically when something needs attention, such as an alarm from the field, so the right people are informed through the right channel.
 
 ### Uptime and health monitoring
-The platform tracks the health of its own services continuously, so operators know the system is running and can act quickly if something needs attention.
+The platform tracks the health of its own services continuously, so operators know the system is running and can act quickly if something needs attention. See it in the [product tour](product-tour.md#uptime-and-health).
 
 ### Observability built in
 Every service emits traces, metrics, and structured logs through OpenTelemetry to a standard monitoring stack, so operators have clear visibility into how the platform is behaving.
