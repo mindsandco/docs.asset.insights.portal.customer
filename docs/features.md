@@ -32,6 +32,9 @@ Data moves through the platform as events, so information flows through as it ar
 ### Management portal
 A single administrative surface for the whole installation: clients and applications, users, roles, assets, fields, gateways, dynamic properties, certificates and secrets, scheduled jobs, and extensions. Built as a modern web application that operators and administrators can use directly.
 
+### Custom properties and documentation
+Names and IDs come standard on every field, gateway, and asset, and on their own they rarely capture everything your business needs to track. Custom properties let you extend any field, gateway, or asset with your own details, from warranty dates to maintenance contacts, so the information your operation runs on stays right next to the equipment it belongs to. When you want the paperwork to live with the equipment, upload your documentation straight to a field. Manuals, warranty certificates, and inspection reports sit alongside the assets they cover, so everything about a field is in one place.
+
 ### GraphQL and REST APIs
 Harmonized data and administration are exposed through a documented GraphQL API, with REST where it fits. Consuming systems such as analytics platforms, ERP, and SCADA query the data they need, and a published API kit makes integration straightforward.
 
