@@ -78,3 +78,5 @@ Most customers start with a focused pilot, see the value on their own data, then
 </div>
 
 > Pay for the data you use. Grow when the value is clear.
+
+You know what it costs. Next, how we get you live: [get in touch](get-in-touch.md).

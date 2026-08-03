@@ -1,6 +1,6 @@
 # Features
 
-Every feature below exists to serve one goal: getting trusted, standardized asset data from the field into the hands of the people and systems that need it. They are grouped by the job they do.
+Every feature below exists to serve one goal: getting trusted, standardized asset data from the field into the hands of the people and systems that need it. They are grouped by the same steps you saw in [how we solve it](how-we-solve-it.md), so each group fills in the detail behind one step of the path.
 
 ## Connect your assets
 
@@ -16,7 +16,7 @@ Field gateways open outbound connections only. They run no inbound network ports
 ### Signed data integrity
 Every payload is cryptographically signed at the gateway and verified centrally, and each gateway authenticates with its own short-lived credentials. You can trust that the data arriving at the center is genuine and unaltered.
 
-## Turn raw data into trusted data
+## Harmonize into trusted data
 
 ### Automatic harmonization
 Telemetry from different vendors, sites, and generations of equipment is normalized into one versioned canonical model. Data that used to arrive in many incompatible formats lines up in a consistent shape that every consumer can rely on.
@@ -27,7 +27,7 @@ A rule engine applies transformations and quality checks as data flows through: 
 ### Event-driven pipeline
 Data moves through the platform as events, so information flows through as it arrives rather than waiting for a batch cycle. The pipeline scales with volume and keeps services decoupled and resilient.
 
-## Access and administer
+## Distribute and administer
 
 ### Management portal
 A single administrative surface for the whole installation: clients and applications, users, roles, assets, fields, gateways, dynamic properties, certificates and secrets, scheduled jobs, and extensions. Walk through it in the [product tour](product-tour.md).
@@ -47,7 +47,7 @@ Apply your own company name, logo, favicon, background, and theme across both th
 ### Extensions marketplace
 Add integrations and add-ons through a built-in marketplace, so new capabilities appear in the portal without rebuilding the core. See it in the [product tour](product-tour.md#marketplace).
 
-## Operate with confidence
+## Act, governed and secure
 
 ### Notifications
 Templated notifications are dispatched automatically when something needs attention, such as an alarm from the field, so the right people are informed through the right channel.
@@ -66,4 +66,4 @@ Governance and cybersecurity are built into every step rather than bolted on. Eg
 ### Vendor-agnostic, Kubernetes-first
 The platform is container-based and runs on Kubernetes, on Azure, AWS, or on-premise. Delivery is automated through GitOps, so the same platform runs wherever your data needs to live, including environments with data residency requirements.
 
-Next: [architecture](architecture.md).
+Connecting your assets is where all of it starts. Next, the protocols available today and the ones coming: [edge connectors](edge-connectors.md).

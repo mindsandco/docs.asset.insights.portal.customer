@@ -48,4 +48,4 @@ Acting on data you cannot verify is a risk in itself, especially where safety, c
 
 The portal records where every figure came from and who can see it, so the data people act on stands up to scrutiny and audit.
 
-Next: [how we solve it](how-we-solve-it.md).
+Those are the outcomes. Next, the path that delivers them: [how we solve it](how-we-solve-it.md).

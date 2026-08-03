@@ -23,7 +23,7 @@ The rest of this page describes the tiers and technology that deliver this.
 
 ## Three tiers, from the field to the user
 
-Asset Insights Portal is organized as three tiers, following the path data takes from an asset to the people and systems that use it.
+Asset Insights Portal is organized as three tiers, following the path data takes from an asset to the people and systems that use it. The same steps run across them: connect at the edge, harmonize centrally, distribute to consumers, and act on what needs attention.
 
 | Tier | What it does |
 |------|--------------|
@@ -39,7 +39,9 @@ The data path in practice: a field gateway sends signed data to the ingest servi
 
 ## Your asset data streams through, it is not stored
 
-For your security, Asset Insights Portal treats your operational asset data as a stream rather than a store. Readings move through the event pipeline, from the field gateway to ingest, get harmonized by the worker, and are delivered to the systems that subscribe to them, without the platform holding on to a lasting copy of your production and telemetry history. What the platform keeps is the configuration and management model it needs to run the installation, not a warehouse of your operational data. This keeps your sensitive asset data in your hands, shrinks the amount of data sitting at rest, and leaves far less exposed if anyone ever gets in.
+For your security, Asset Insights Portal treats your operational asset data as a stream rather than a store. Readings move through the event pipeline, from the field gateway to ingest, get harmonized by the worker, and are delivered to the systems that subscribe to them, without the platform holding on to a lasting copy of your production and telemetry history. What the platform keeps is the configuration and management model it needs to run the installation, not a warehouse of your operational data. This keeps your sensitive asset data in your hands, shrinks the amount of data sitting at rest, and leaves far less exposed if anyone ever gets in. It also means there is one authoritative record of what your assets did, held at the source, so no copy in the platform can drift from it or outlive the purpose it was sent for.
+
+When you do need measurements kept, such as a trend view or a report covering the last quarter, that arrives as an app on top of the platform or as your own system subscribing to the harmonized stream. The app holds its own data under your own retention rules, and the core pipeline stays clear of your operational data.
 
 ## Built cloud-native from the ground up
 
@@ -84,4 +86,4 @@ Field gateways speak the protocols that industrial equipment already uses, and t
 
 Because the platform is container-based and defined as code, it runs on the major public clouds and on-premise, including environments with data residency requirements. The architecture stays the same wherever it runs.
 
-Next: [pricing](pricing.md).
+That is the foundation the rest of the platform stands on. Next, what it costs to run: [pricing](pricing.md).

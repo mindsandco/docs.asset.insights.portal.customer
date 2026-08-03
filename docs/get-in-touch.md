@@ -1,6 +1,6 @@
 # Get in touch
 
-Ready to see what a single trusted view of your assets could do for your teams? We would like to hear about your goals and show you the portal working on the kind of data you deal with every day.
+Ready to see what one trusted source for your asset data could do for your teams? We would like to hear about your goals and show you the portal working on the kind of data you deal with every day.
 
 ## How we start
 
@@ -16,6 +16,8 @@ Antire is a people-first AI consultancy. Born in AI. Built for people. We partne
 
 - **Website:** [antire.com](https://antire.com)
 - **Email:** [hello@antire.com](mailto:hello@antire.com)
+
+You have the full picture now, so the next step is a conversation about your goals and your assets.
 
 <div class="cta">
 

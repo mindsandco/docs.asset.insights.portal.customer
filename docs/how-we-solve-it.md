@@ -4,7 +4,7 @@ Asset Insights Portal follows a simple path from siloed systems to one governed 
 
 ## 1. Connect at the edge
 
-A field gateway connects to your assets on site over the industrial and IoT protocols they already speak, such as OPC UA, MQTT, and Bluetooth. It buffers data locally so nothing is lost when a site loses connectivity, signs each package for integrity, and sends it to the central platform over an outbound connection only. You do not move to new equipment first. The gateway meets your assets where they are.
+A field gateway connects to your assets on site over the industrial and IoT protocols they already speak. See [edge connectors](edge-connectors.md) for what is available today and what is coming. It buffers data locally so nothing is lost when a site loses connectivity, signs each package for integrity, and sends it to the central platform over an outbound connection only. You do not move to new equipment first. The gateway meets your assets where they are.
 
 ## 2. Harmonize
 
@@ -28,4 +28,4 @@ Asset Insights Portal is delivered by Antire, and we prove value fast rather tha
 
 > We simplify AI and prove business value fast, so you can see the benefit before you scale.
 
-Next: [product tour](product-tour.md).
+That is the path in principle. Next, see it running in the portal your teams use every day: [product tour](product-tour.md).

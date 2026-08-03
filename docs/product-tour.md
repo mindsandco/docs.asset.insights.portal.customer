@@ -41,7 +41,7 @@ Adding capabilities stays under your control. Only the people you choose can ins
 
 ## Properties
 
-Think of properties as custom fields you define once and reuse. Give a property a name and a type, such as a number, a date, a yes or no, a short text, or a pick list, then attach it to your assets, fields, or gateways. Your teams capture the details your business runs on, from warranty dates to site contacts to turbine model, without waiting for a code change or a new release. The platform stores these alongside the standard production and availability data, so everything about an asset lives in one place.
+Think of properties as custom fields you define once and reuse. Give a property a name and a type, such as a number, a date, a yes or no, a short text, or a pick list, then attach it to your assets, fields, or gateways. Your teams capture the details your business runs on, from warranty dates to site contacts to turbine model, without waiting for a code change or a new release. These sit alongside the standard asset details the platform already keeps, so everything you record about an asset lives in one place.
 
 ![Dynamic properties page showing custom properties on assets, fields and gateways](assets/screenshots/properties.png)
 
@@ -79,4 +79,4 @@ Asset Insights Portal ships with five core roles that cover the common jobs, fro
 
 ![Role administration page showing named roles with fine-grained permissions](assets/screenshots/roles.png)
 
-Next: [features](features.md).
+You have seen the portal in daily use. Next, the full capability list behind those screens: [features](features.md).

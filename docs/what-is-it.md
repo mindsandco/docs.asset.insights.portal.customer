@@ -2,7 +2,7 @@
 
 Asset Insights Portal is a vendor-agnostic platform that gives you a single, trusted place to collect, standardize, and access data about the assets your organization owns and operates. It works across the equipment, sensors, controllers, and systems you already run, whoever made them and whatever protocol they speak.
 
-The portal connects to your assets at the edge, brings their data into one consistent model, and makes it available to the people and systems that need it. Instead of chasing figures across disconnected systems and one-off integrations, everyone works from data they can trust.
+The portal connects to your assets at the edge, harmonizes their data into one consistent model, and distributes it to the people and systems that need it. Instead of chasing figures across disconnected systems and one-off integrations, everyone works from data they can trust.
 
 ## The idea in one line
 
@@ -33,4 +33,4 @@ Trust is built into how the platform works rather than assumed. Data is signed a
 
 > The best asset decisions come from people who can rely on their data. The portal exists to give them data they can rely on.
 
-Next: [what we solve](what-we-solve.md).
+That is what it is. Next, the problems it removes and the numbers behind them: [what we solve](what-we-solve.md).
