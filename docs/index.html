@@ -68,6 +68,81 @@
             input.addEventListener('input', render);
             render();
           });
+        },
+        function (hook) {
+          // Azure infrastructure cost calculator.
+          // Deployment sizes come from our reference architecture. Azure list prices are
+          // West Europe, EUR, pay-as-you-go, retrieved from the Azure retail price API
+          // on 2026-08-03. When refreshing prices, update the date in pricing.md too.
+          var SIZES = [
+            { name: 'Sandbox', sku: 'Standard_D2as_v5', nodes: 3, maxReq: 7500, compute: 200, disks: 79 },
+            { name: 'Pilot', sku: 'Standard_D4as_v5', nodes: 3, maxReq: 17000, compute: 400, disks: 136 },
+            { name: 'Production', sku: 'Standard_D8as_v5', nodes: 3, maxReq: 35600, compute: 800, disks: 267 },
+            { name: 'Scale', sku: 'Standard_D32as_v5', nodes: 3, maxReq: 147000, compute: 3198, disks: 830 },
+            { name: 'Large', sku: 'Standard_D64as_v5', nodes: 3, maxReq: 296000, compute: 6396, disks: 1544 }
+          ];
+          var AKS = 64;        // AKS Standard tier uptime SLA, EUR 0.0878 per hour
+          var PLATFORM = 38;   // load balancer rules, static IP, container registry, key vault
+          var EGRESS_BANDS = [[10000, 0.0702], [40000, 0.0570], [100000, 0.0527], [Infinity, 0.0351]];
+          var LB_PER_GB = 0.0044;
+          var MSG_BYTES = 500;
+          function eur0(n) { return '€' + Math.round(n).toLocaleString('en-US'); }
+          function egressCost(gb) {
+            var left = Math.max(0, gb - 100), cost = 0;
+            for (var i = 0; i < EGRESS_BANDS.length && left > 0; i++) {
+              var take = Math.min(left, EGRESS_BANDS[i][0]);
+              cost += take * EGRESS_BANDS[i][1];
+              left -= take;
+            }
+            return cost;
+          }
+          hook.doneEach(function () {
+            var gwInput = document.getElementById('ic-gateways');
+            var rateInput = document.getElementById('ic-readings');
+            var out = document.getElementById('ic-result');
+            if (!gwInput || !rateInput || !out) return;
+            function render() {
+              var gw = parseInt(gwInput.value, 10);
+              if (!gw || gw < 1) {
+                out.innerHTML = '<p class="pc-hint">Enter how many gateways you plan to connect.</p>';
+                return;
+              }
+              var perMin = parseFloat(rateInput.value);
+              var req = gw * perMin;
+              var size = SIZES.filter(function (s) { return req <= s.maxReq; })[0];
+              if (!size) {
+                out.innerHTML =
+                  '<div class="pc-tier">Custom</div>' +
+                  '<p class="pc-hint">This is beyond our largest reference deployment. ' +
+                  '<a href="mailto:hello@antire.com?subject=Asset%20Insights%20Portal%20-%20Infrastructure%20sizing">Talk with us</a> ' +
+                  'and we will size it with you.</p>';
+                return;
+              }
+              // Harmonized messages leaving the platform, plus a margin for portal and API traffic.
+              var gb = req * 60 * 730 * MSG_BYTES * 1.1 / 1e9;
+              var egress = egressCost(gb) + gb * LB_PER_GB;
+              var total = size.compute + AKS + size.disks + egress + PLATFORM;
+              out.innerHTML =
+                '<div class="pc-tier">' + size.name + ' deployment</div>' +
+                '<div class="pc-price">' + eur0(total) + '<span>&nbsp;/ month on Azure</span></div>' +
+                '<p class="pc-hint">' + size.nodes + ' × ' + size.sku + ' · ' +
+                Math.round(req).toLocaleString('en-US') + ' ingest requests per minute · ' +
+                Math.round(gb).toLocaleString('en-US') + ' GB out per month</p>' +
+                '<table class="ic-table"><tbody>' +
+                '<tr><td>Cluster nodes</td><td>' + eur0(size.compute) + '</td></tr>' +
+                '<tr><td>Managed Kubernetes</td><td>' + eur0(AKS) + '</td></tr>' +
+                '<tr><td>Storage for the broker, databases and logs</td><td>' + eur0(size.disks) + '</td></tr>' +
+                '<tr><td>Outbound data</td><td>' + eur0(egress) + '</td></tr>' +
+                '<tr><td>Networking, registry and key vault</td><td>' + eur0(PLATFORM) + '</td></tr>' +
+                '</tbody></table>' +
+                '<p class="pc-hint">A one year reserved instance takes roughly 37 percent off the node line, ' +
+                'and three years takes roughly 55 percent, so this deployment lands near ' +
+                eur0(total - size.compute * 0.55) + ' per month on a three year commitment.</p>';
+            }
+            gwInput.addEventListener('input', render);
+            rateInput.addEventListener('change', render);
+            render();
+          });
         }
       ]
     };

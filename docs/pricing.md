@@ -58,6 +58,28 @@ A field is a group of assets you manage together, such as a solar site, a wind p
 
 Prefer not to run the platform yourself? We can host it for you as a fully managed service, so your team gets the value without operating any infrastructure. Hosting is priced by the size and demands of your deployment, from **€270 to €13,400 per month**. Tell us about your estate and we will quote the right fit.
 
+## What it costs to run on Azure
+
+If you run the platform in your own Azure subscription, the cloud bill is yours, and you should know that number before you commit. Tell us how many field gateways you plan to connect and how often each one reports, and the calculator sizes the deployment from our reference architecture and prices it at Azure list rates.
+
+<div id="infra-calculator" class="price-calc">
+  <label for="ic-gateways">How many field gateways will you connect?</label>
+  <input id="ic-gateways" type="number" min="1" step="1" value="400" inputmode="numeric" />
+  <label for="ic-readings">How often does each gateway report?</label>
+  <select id="ic-readings">
+    <option value="1">Every minute</option>
+    <option value="0.2" selected>Every 5 minutes</option>
+    <option value="0.0667">Every 15 minutes</option>
+    <option value="0.0167">Every hour</option>
+  </select>
+  <div class="pc-result" id="ic-result"></div>
+  <p class="pc-note">Azure list prices for West Europe in EUR on a pay-as-you-go subscription, retrieved August 2026. Deployment sizes come from our reference architecture, so treat them as a starting point for your own capacity planning rather than a measured benchmark for your estate. Your Azure agreement, retention policy and outbound traffic will move the total. This is separate from your Asset Insights Portal subscription above.</p>
+</div>
+
+Two things drive the bill. The first is how much compute the deployment needs, which follows the volume of readings your gateways send. The second is storage, which follows how long you keep data. Bringing your own message broker or database into the deployment removes those lines from the estimate, and a reserved instance commitment takes a large share off the compute line.
+
+Prefer to skip all of this? Our managed hosting covers it, and you get one predictable invoice instead of a cloud bill to reconcile.
+
 ## Support agreements
 
 Need guaranteed response times, priority handling, or a dedicated point of contact? We offer support agreements tailored to how critical the platform is to your operation. **Talk with us** and we will size a support plan around your needs.

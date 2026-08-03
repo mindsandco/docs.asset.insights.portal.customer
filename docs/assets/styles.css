@@ -151,7 +151,21 @@ body:has(section.cover.show) .app-nav a:hover { color: var(--brand-green); }
   border: 1px solid var(--brand-beige-dark);
   border-radius: 6px;
 }
-.price-calc input:focus { outline: none; border-color: var(--brand-burgundy); }
+.price-calc select {
+  font-size: 1.1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--brand-beige-dark);
+  border-radius: 6px;
+  background: #ffffff;
+}
+.price-calc input:focus,
+.price-calc select:focus { outline: none; border-color: var(--brand-burgundy); }
+/* Second label in a calculator needs room above it */
+.price-calc input + label,
+.price-calc select + label { margin-top: 1rem; }
+.ic-table { width: 100%; margin: 0.9rem 0 0; font-size: 0.95rem; }
+.ic-table td { padding: 0.35rem 0; border-bottom: 1px solid var(--brand-beige-dark); }
+.ic-table td:last-child { text-align: right; font-weight: 600; color: var(--brand-burgundy-dark); white-space: nowrap; }
 .pc-result { margin-top: 1.1rem; }
 .pc-tier {
   display: inline-block;
