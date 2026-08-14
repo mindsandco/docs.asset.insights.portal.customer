@@ -21,6 +21,8 @@ Every payload is cryptographically signed at the gateway and verified centrally,
 ### Automatic harmonization
 Telemetry from different vendors, sites, and generations of equipment is normalized into one versioned canonical model. Data that used to arrive in many incompatible formats lines up in a consistent shape that every consumer can rely on.
 
+**Coming soon: custom mapping.** When your equipment names things its own way, you will be able to define your own mapping from the incoming payload into the canonical model, directly in the portal. You choose which source field feeds which model field, check the mapping against a sample payload, and activate it once it looks right. Mappings are versioned and auditable, so you can see which version produced which data and roll back when you need to. The standard mapping keeps running wherever no custom mapping is active, and every event states whether it came from the standard mapping or a custom one, so downstream systems always know what they are reading. A later release adds type conversion on a mapping row, so a reading that arrives as text becomes a number, a true or false value, or a proper timestamp on the way into the model, with conversions checked against the target type before you activate the mapping and any that fail at runtime routed to the existing error handling.
+
 ### Rule-based transformation and validation
 A rule engine applies transformations and quality checks as data flows through: unit conversions, range validation, derived metrics, and event detection. The result is clean, consistent, trustworthy data rather than raw readings someone has to interpret by hand.
 
